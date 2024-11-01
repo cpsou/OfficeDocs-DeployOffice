@@ -26,7 +26,7 @@ See the [example installation scenarios](#example-installation-scenarios) sectio
 
 ## Office releases and their version number
 
-The table below lists supported Office releases, their versions, and [installation technology](#installation-technologies-used-by-office). This information applies to Project and Visio as well.
+The following table lists supported Office releases, their versions, and installation technology. This information applies to Project and Visio as well.
 
 | Office release                                      | Version | Installation technologies                     |
 |-----------------------------------------------------|---------|-----------------------------------------------|
@@ -46,14 +46,16 @@ Find this version information in **Control Panel** > **Programs and Features** o
 
 ## Installation technologies used by Office
 
-Office, Project, and Visio are available through different purchasing methods, which determine the installation technology used:
+Office, Project, and Visio can be purchased through a Microsoft 365 plan, as a one-time purchase, or via a volume licensing agreement. The purchase method and Office version—such as Microsoft 365 or Office 2016—determine the installation technology used.
 
-- **Click-to-Run**
-- **Windows Installer (MSI)**
+There are two types of installation technology covered here:
 
-In newer releases, go to **File** > **Account** in an Office app to check the installation technology under **Product Information**.
+- Click-to-Run
+- Windows Installer (MSI)
 
-You can also identify Click-to-Run by the presence of **Update Options** in **Product Information**. If **Update Options** is absent, it was installed with Windows Installer (MSI).
+To check the installation technology in newer releases, go to **File** > **Account** in an Office app and look under **Product Information**.
+
+You can also identify a Click-to-Run installation by the presence of **Update Options** in **Product Information**. If **Update Options** isn't shown, the installation uses Windows Installer (MSI).
 
 ## Example installation scenarios
 
@@ -79,7 +81,7 @@ Here are some example installation scenarios with explanations for whether they'
 - All installed products must match in bit version (32-bit or 64-bit). For example, you can't install a 32-bit version of Visio on the same computer with a 64-bit version of Office.
 - Volume licensed versions of Office LTSC 2024, Office LTSC 2021, and Office 2019 use Click-to-Run, while Office 2016 uses Windows Installer (MSI).
 - Products installed on the same computer must use the same [update channel](../updates/overview-update-channels.md). For example, the volume licensed version of Office Professional Plus 2019 can only use the PerpetualVL2019 update channel.
-- Volume licensed versions of Project and Visio can use any update channel configured for Microsoft 365 Apps, providing flexibility in deployment. However, only subscription versions of Project and Visio receive regular feature updates; volume licensed versions do not.
+- Volume licensed versions of Project and Visio can use any update channel configured for Microsoft 365 Apps, providing flexibility in deployment. However, only subscription versions of Project and Visio receive regular feature updates; volume licensed versions don't.
 
 ## Related articles
 
