@@ -26,7 +26,7 @@ See the [example installation scenarios](#example-installation-scenarios) sectio
 
 ## Office releases and their version number
 
-The table below lists supported Office releases, their versions, and [installation technology](#installation-technologies-used-by-office). This information applies to Project and Visio as well.
+The following table lists supported Office releases, their versions, and [installation technology](#installation-technologies-used-by-office). This information applies to Project and Visio as well.
 
 | Office release                                      | Version | Installation technologies                     |
 |-----------------------------------------------------|---------|-----------------------------------------------|
