@@ -63,12 +63,12 @@ Here are some example installation scenarios with explanations for whether they'
 
 | Products to install                                       | Supported?                  | Explanation                                                                  |
 |----------------------------------------------------------|----------------------------|-----------------------------------------------------------------------------|
-| Microsoft 365 Apps + Visio LTSC Professional 2024 (volume licensed) | Yes, with a caveat <sup>1</sup> | Both use Click-to-Run and are the same version (16.0).                     |
-| Microsoft 365 Apps + Project Standard 2024 (retail)      | Yes, with a caveat <sup>1</sup> | Both use Click-to-Run and are the same version (16.0).                      |
-| Microsoft 365 Apps + Visio LTSC Professional 2021 (volume licensed)  | Yes, with a caveat <sup>2</sup>   | Both use Click-to-Run and are the same version (16.0).                     |
-| Microsoft 365 Apps + Project Standard 2021 (retail)      | Yes, with a caveat <sup>2</sup>  | Both use Click-to-Run and are the same version (16.0).                      |
-| Microsoft 365 Apps + Project Professional 2019 (volume licensed) | Yes, with a caveat <sup>3</sup> | Both use Click-to-Run and are the same version (16.0).                      |
-| Microsoft 365 Apps + Visio Standard 2019 (retail)        | Yes, with a caveat <sup>3</sup> | Both use Click-to-Run and are the same version (16.0).                      |
+| Microsoft 365 Apps + Visio LTSC Professional 2024 (volume licensed) | Yes, with a caveat<sup>1</sup> | Both use Click-to-Run and are the same version (16.0).                     |
+| Microsoft 365 Apps + Project Standard 2024 (retail)      | Yes, with a caveat<sup>1</sup> | Both use Click-to-Run and are the same version (16.0).                      |
+| Microsoft 365 Apps + Visio LTSC Professional 2021 (volume licensed)  | Yes, with a caveat<sup>2</sup>   | Both use Click-to-Run and are the same version (16.0).                     |
+| Microsoft 365 Apps + Project Standard 2021 (retail)      | Yes, with a caveat<sup>2</sup>  | Both use Click-to-Run and are the same version (16.0).                      |
+| Microsoft 365 Apps + Project Professional 2019 (volume licensed) | Yes, with a caveat<sup>3</sup> | Both use Click-to-Run and are the same version (16.0).                      |
+| Microsoft 365 Apps + Visio Standard 2019 (retail)        | Yes, with a caveat<sup>3</sup> | Both use Click-to-Run and are the same version (16.0).                      |
 | Office Professional Plus 2019 (volume licensed) + Visio Professional 2016 (volume licensed) | No, alternative available  | Different installation technologies (Click-to-Run vs. MSI), but same version (16.0).<br>See [Use the Office Deployment Tool to install volume licensed versions of Project 2016 and Visio 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md) |
 | Microsoft 365 Apps + Visio Professional 2016 (volume licensed) | No, alternative available | Different installation technologies, same version (16.0).<br>See [Use the Office Deployment Tool to install volume licensed versions of Project 2016 and Visio 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md) |
 
