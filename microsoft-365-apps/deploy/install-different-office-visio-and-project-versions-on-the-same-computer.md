@@ -72,16 +72,17 @@ Here are some example installation scenarios with explanations for whether they'
 | Office Professional Plus 2019 (volume licensed) + Visio Professional 2016 (volume licensed) | No, alternative available  | Different installation technologies (Click-to-Run vs. MSI), but same version (16.0).<br>See [Use the Office Deployment Tool to install volume licensed versions of Project 2016 and Visio 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md) |
 | Microsoft 365 Apps + Visio Professional 2016 (volume licensed) | No, alternative available | Different installation technologies, same version (16.0).<br>See [Use the Office Deployment Tool to install volume licensed versions of Project 2016 and Visio 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md) |
 
-<sup>1</sup> Requires Version 2408 or later of Microsoft 365 Apps for compatibility with Project 2024, Visio LTSC 2024, and Visio 2024.  
-<sup>2</sup> Requires Version 2108 or later for compatibility with Project 2021, Visio LTSC 2021, and Visio 2021.  
-<sup>3</sup> Requires Version 1808 or later for compatibility with Office 2019 products.
+<sup>1</sup> Requires Version 2408 of Microsoft 365 Apps or later for compatibility with Project 2024, Visio LTSC 2024, and Visio 2024.  
+<sup>2</sup> Requires Version 2108 of Microsoft 365 Apps or later for compatibility with Project 2021, Visio LTSC 2021, and Visio 2021.  
+<sup>3</sup> Requires Version 1808 of Microsoft 365 Apps or later for compatibility with Office 2019 products.
 
 ## Additional information
 
-- All installed products must match in bit version (32-bit or 64-bit). For example, you can't install a 32-bit version of Visio on the same computer with a 64-bit version of Office.
+- All installed products must match in bit (32-bit or 64-bit) version. For example, you can't install a 32-bit version of Visio on the same computer with a 64-bit version of Office.
 - Volume licensed versions of Office LTSC 2024, Office LTSC 2021, and Office 2019 use Click-to-Run, while Office 2016 uses Windows Installer (MSI).
 - Products installed on the same computer must use the same [update channel](../updates/overview-update-channels.md). For example, the volume licensed version of Office Professional Plus 2019 can only use the PerpetualVL2019 update channel.
-- Volume licensed versions of Project and Visio can use any update channel configured for Microsoft 365 Apps, providing flexibility in deployment. However, only subscription versions of Project and Visio receive regular feature updates; volume licensed versions don't.
+- Volume licensed Project and Visio installations must be configured to use the same update channel as Microsoft 365 Apps.
+- Only subscription versions of Project and Visio receive regular feature updates; volume licensed versions don't.
 
 ## Related articles
 
