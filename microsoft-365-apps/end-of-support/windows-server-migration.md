@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides guidance to Office admins on moving from Microsoft 365 Apps on Windows Server to either Windows 365 or Azure Virtual Desktop."
-ms.date: 11/01/2024
+ms.date: 11/04/2024
 ---
 # Microsoft 365 Apps migration from Windows Server
 
@@ -19,10 +19,10 @@ ms.date: 11/01/2024
 
 Microsoft 365 Apps is supported on the following versions of Windows Server until the dates specified:
 
-- Windows Server 2016: October 2025
-- Windows Server 2019: October 2025
-- Windows Server 2022: October 2026
 - Windows Server 2025: October 2029
+- Windows Server 2022: October 2026
+- Windows Server 2019: October 2025
+- Windows Server 2016: October 2025
 
 > [!NOTE]
 > - Only Version 2302 or later of Microsoft 365 Apps is supported on Windows Server 2022.
@@ -82,10 +82,10 @@ If an on-premises session host deployment is required, Azure Virtual Desktop for
 
 Support for Windows Server itself isn't impacted. Here are the end-of-support dates for Windows Server:
 
-- Windows Server 2016: January 2027
-- Windows Server 2019: January 2029
-- Windows Server 2022: October 2031
 - Windows Server 2025: October 2034
+- Windows Server 2022: October 2031
+- Windows Server 2019: January 2029
+- Windows Server 2016: January 2027
 
 For more information, go to the [Search Product and Services Lifecycle Information](/lifecycle/products/) page.
 
