@@ -11,8 +11,7 @@ ms.localizationpriority: medium
 recommendations: false
 hideEdit: false
 description: "Provides migration guidance for OneNote for Windows 10"
-ms.date: 10/02/2024
-
+ms.date: 11/05/2024
 ---
 
 # OneNote for Windows 10 migration guidance
@@ -43,7 +42,7 @@ To ensure a smooth migration to OneNote for Windows, organizations must customiz
 
 - Terminates all OneNote for Windows 10 processes.
 
-- Backs up any unsynced notebooks to the user's backup folder using the `onenote-cmd://backup:` command.
+- Backs up any unsynced notebooks to the user's backup folder using the `onenote-uwp://backup:` command.
   - The backups are stored in `C:\temp\OneNoteMigration`, however, feel free to edit the path to fit your organization’s needs.
   - Each backup creates a corresponding folder for each notebook with unsynced sections within this path.
 
