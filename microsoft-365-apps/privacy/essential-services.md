@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 10/09/2024
+ms.date: 11/06/2024
 ---
 
 # Essential services for Office
@@ -5343,6 +5343,42 @@ This event is triggered when the dynamic Lifecycle Programming Platform business
 The following fields are collected:
 
 - **Type (int32)** - Indicates the licensing business bar type
+
+
+### Office.Licensing.CopilotStatus
+
+This event is triggered when a user launches an app. The data is used to detect when a user is eligible for BYOA (Bring Your Own AI) functionality. 
+Without information of whether the user is entitled to use the app and the Copilot add-in, we cannot troubleshoot or identify performance of the Copilot add-in in these scenarios.
+
+The following fields are collected:
+
+- **Data_ActiveIdentity** – Hash of user ID of the active identity (akin to User_PrimaryIdentityHash)
+
+- **Data_ActiveIdentitySpace** – Categorization of Session Identity (consumer or commercial)
+
+- **Data_AllLicenseIDs** – Semi-colon delimited list of all license IDs
+
+- **Data_BestCopilotLicenseId** – LicenseId of the "best license" that has Copilot
+
+- **Data_BestLicenseCategory** – License category of the best license
+
+- **Data_BestLicenseId** – LicenseId of the "best license"
+ 
+- **Data_CopilotEnabled** - Whether Copilot is enabled
+
+- **Data_CopilotScenario** – Estimation of whether the user is Prodigi, CopilotProConsumer, or Enterprise
+
+- **Data_IsCopilotProUser** – T/F whether Copilot is enabled through Copilot Pro subscription
+
+- **Data_IsEnterpriseCopilotUser** – T/F whether Copilot is enabled through Enterprise-enabled subscription
+
+- **Data_IsProdigiCopilotUser** – Whether Copilot is enabled through Personal or Family subscription
+
+- **Data_Mode** – Integer representing the license mode
+
+- **Data_SessionIdentity** – Hash of user ID of the session Identity (akin to User_PrimaryIdentityHash)
+
+- **Data_SessionIdentitySpace** – Categorization of Session Identity (consumer or commercial)
 
 
 ### Office.Licensing.Dialogs.ReactNativeDialog.RekaService.CloseAndStoreUserAction
@@ -18807,6 +18843,18 @@ The following fields are collected:
 
 - **Tracing.TraceId** - ID to correlate the event with other events from the same user session.
 
+
+### Office.OneNote.CopilotFREEnabled  
+
+This event is triggered to verify that the user is eligible to see Copilot First Run Experiment (FRE). 
+
+The following fields are collected: 
+
+- **Event_name** – Name of the telemetry event.
+ 
+- **Event_SampleRate** – Sampling rate for the event. 
+
+- **0/1 Event_IsExportable** – Defines whether the user can request the data to be exported. 
 
 ### Office.OneNote.GetSharePointIdsForDocument
 

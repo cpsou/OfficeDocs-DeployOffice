@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 10/04/2024
+ms.date: 11/06/2024
 ---
 
 # Required diagnostic data for Office
@@ -11342,6 +11342,8 @@ The following fields are collected:
 
 - **fMergeSucceeded** - Indicates if changes made by other users are merged to the document as part of the saving process.
 
+- **HasPendingAutoCreate** - Indicates whether the file is in the middle of AutoCreate process
+
 - **IOTransactionId** - unique identifier for various phases of save operation like loading and merging of document.
 
 #### Office.Word.Word.DocumentDirtyFlagChanged
@@ -16289,6 +16291,16 @@ The following fields are collected:
 - **Status** - Error code integer
 
 - **SubStatus** - Error subcategory code integer
+
+#### Office.Android.SignInTaskInitiated
+
+The event is triggered when the application shows the signin flow like Account Transfer flow on mobile devices. Data is used to determine the source and mode of the signin trigger and is also used to analyse the signin completion errors or identify errors if any.
+
+The following fields are collected:
+ 
+- **EntryPoint** - Indicates the entry point in the app, from where sign-in attempt was initiated.
+
+- **StartMode** – Indicates the mode in which sign-in attempt was started.
 
 
 #### Office.Apple.Apple.AppBoot.Mac
