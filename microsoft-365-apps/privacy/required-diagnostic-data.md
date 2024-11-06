@@ -16294,13 +16294,13 @@ The following fields are collected:
 
 #### Office.Android.SignInTaskInitiated
 
-The event is triggered when the application shows the signin flow like Account Transfer flow on mobile devices. Data is used to determine the source and mode of the signin trigger and is also used to analyse the signin completion errors or identify errors if any.
+The event is triggered when the application shows the sign in flow like Account Transfer flow on mobile devices. Data is used to determine the source and mode of the sign in trigger and is also used to analyse the sign in completion errors or identify errors if any.
 
 The following fields are collected:
  
-- **EntryPoint** - Indicates the entry point in the app, from where sign-in attempt was initiated.
+- **EntryPoint** - Indicates the entry point in the app, from where sign in attempt was initiated.
 
-- **StartMode** – Indicates the mode in which sign-in attempt was started.
+- **StartMode** – Indicates the mode in which sign in attempt was started.
 
 
 #### Office.Apple.Apple.AppBoot.Mac
