@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 11/06/2024
+ms.date: 11/07/2024
 ---
 
 # Essential services for Office
@@ -18850,11 +18850,11 @@ This event is triggered to verify that the user is eligible to see Copilot First
 
 The following fields are collected: 
 
+- **Event_IsExportable** – Defines whether the user can request the data to be exported.
+
 - **Event_name** – Name of the telemetry event.
  
 - **Event_SampleRate** – Sampling rate for the event. 
-
-- **Event_IsExportable** – Defines whether the user can request the data to be exported. 
 
 ### Office.OneNote.GetSharePointIdsForDocument
 

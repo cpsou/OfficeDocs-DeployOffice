@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 11/06/2024
+ms.date: 11/07/2024
 ---
 
 # Required diagnostic data for Office
