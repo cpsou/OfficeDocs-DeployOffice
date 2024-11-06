@@ -18854,7 +18854,7 @@ The following fields are collected:
  
 - **Event_SampleRate** – Sampling rate for the event. 
 
-- **0/1 Event_IsExportable** – Defines whether the user can request the data to be exported. 
+- **Event_IsExportable** – Defines whether the user can request the data to be exported. 
 
 ### Office.OneNote.GetSharePointIdsForDocument
 
