@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 11/07/2024
+ms.date: 11/06/2024
 ---
 
 # Essential services for Office
@@ -18846,7 +18846,7 @@ The following fields are collected:
 
 ### Office.OneNote.CopilotFREEnabled  
 
-This event is triggered to verify that the user is eligible to see Copilot First Run Experiment (FRE). 
+This event is triggered to verify that the user is eligible to see Copilot First Run Experience (FRE). 
 
 The following fields are collected: 
 
