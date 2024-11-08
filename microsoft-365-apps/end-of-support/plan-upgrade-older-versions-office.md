@@ -27,7 +27,7 @@ The following table shows the end of support dates for older versions of Office.
 | Office 2010    | October 13, 2020     |
 | Office 2007    | October 10, 2017     |
 
-This article provides recommendations, information, and links to help IT Pros and Office admins in organizations plan their upgrades from these older versions of Office to Microsoft 365 Apps. If you haven't upgraded from these older versions of Office, we recommend you start now.
+This article offers guidance, resources, and links to help IT professionals and Office administrators plan upgrades from older versions of Office to Microsoft 365 Apps. If your organization still uses these versions, consider starting the upgrade process now.
 
 We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://www.microsoft.com/fasttrack) for cloud migrations.
 
@@ -75,7 +75,7 @@ Microsoft 365 provides subscription plans that include access to Office applicat
 
 Microsoft 365 Apps is the version of Office that comes with many of those enterprise and business subscription plans. Microsoft 365 Apps includes the full versions of Office apps installed on your client devices. For example, Word, PowerPoint, Excel, Outlook, and OneNote.
 
-Unlike volume licensed versions of Office, Microsoft 365 Apps provides a user-based licensing model that allows your users to install Office on multiple devices with their license. For example, install and use Microsoft 365 Apps on both a Windows 11 device and a Mac, as well as on a mobile device. Other options are available, such as [device-based licensing](../licensing-activation/device-based-licensing.md) or [shared computer activation](../deploy/overview-office-deployment-tool.md) for devices shared by multiple users, and [extended offline access](../licensing-activation/overview-extended-offline-access.md) for devices that aren't connected to the internet for an extended period of time.  
+Unlike volume licensed versions of Office, Microsoft 365 Apps provides a user-based licensing model that allows your users to install Office on multiple devices with their license. For example, install and use Microsoft 365 Apps on both a Windows 11 device and a Mac, as well as on a mobile device. Other options include [device-based licensing](../licensing-activation/device-based-licensing.md) and [shared computer activation](../deploy/overview-office-deployment-tool.md) for devices used by multiple users, and [extended offline access](../licensing-activation/overview-extended-offline-access.md) for devices that remain offline for extended periods.  
 
 There are also differences in how you deploy, activate, and update Microsoft 365 Apps compared to older volume licensed versions of Office. For more information about Microsoft 365 Apps, see the following information:
 
@@ -114,7 +114,7 @@ For more information, see the following resources:
 
 ## Assess application compatibility
 
-Before deploying Microsoft 365 Apps, you want to test your business-critical VBA macros, non-Microsoft add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../deploy/assess-microsoft-365-apps.md#step-4---assess-application-compatibility).
+Before deploying Microsoft 365 Apps, you want to test your business-critical Visual Basic for Applications (VBA) macros, non-Microsoft add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../deploy/assess-microsoft-365-apps.md#step-4---assess-application-compatibility).
   
 If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash). Or, you can get assistance from Microsoft through the [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure) program.
 
@@ -147,7 +147,7 @@ There are several methods to upgrade from Office 2016 or Office 2019 to Microsof
 
 - Use Group Policy or Intune CSP settings
   
-  You can configure Group Policy or Intune Configuration Service Provider (CSP) settings to upgrade Office 2019 to Microsoft 365 Apps for enterprise without deploying a separate installation package. This method leverages the existing Office installation and updates it to Microsoft 365 Apps.
+  You can configure Group Policy or Intune Configuration Service Provider (CSP) settings to upgrade Office 2019 to Microsoft 365 Apps for enterprise without deploying a separate installation package. This method uses the existing Office installation and updates it to Microsoft 365 Apps.
 
   - Enable the Group Policy setting *Upgrade Office 2019 to Microsoft 365 Apps for enterprise* located at:
 
@@ -171,13 +171,13 @@ There are several methods to upgrade from Office 2016 or Office 2019 to Microsof
   > [!Note]
   > The initial upgrade uses the specified update channel. After the upgrade, you can change the update channel to suit your organization's needs.
 
-  The upgrade process may take several days to complete as it depends on Office's update checks.
+  The upgrade process could take several days to complete as it depends on Office's update checks.
 
 - Deploy an upgrade package
 
   Use the Office Deployment Tool to create an installation package that upgrades Office 2016 or Office 2019 to Microsoft 365 Apps.
 
-  - Configure the Office Deployment Tool to remove existing MSI versions of Office during the upgrade by setting the **RemoveMSI** element in your configuration XML file.
+  - Configure the Office Deployment Tool to remove existing Microsoft Installer (MSI) versions of Office during the upgrade by setting the **RemoveMSI** element in your configuration XML file.
   - Deploy the installation package using your software distribution solution, such as Configuration Manager.
 
   Example configuration XML:
@@ -199,10 +199,10 @@ There are several methods to upgrade from Office 2016 or Office 2019 to Microsof
 
 ### Considerations during the upgrade
 
-- User Prompt: After the upgrade, users may be prompted with a "Your Privacy Matters" dialog. Users need to accept this prompt to complete the upgrade process fully.
+- User Prompt: After the upgrade, users could be prompted with a "Your Privacy Matters" dialog. Users need to accept this prompt to complete the upgrade process fully.
 - Update Channels: Plan your update channels accordingly. Microsoft 365 Apps offers several update channels to control how often users receive feature updates. For more information, see [Choose how often to update Office with new features](#).
-- Network Bandwidth: Upgrading devices may require significant network bandwidth, especially when downloading updates from the Office Content Delivery Network (CDN). Ensure that your network infrastructure can handle the traffic or consider using features like Delivery Optimization to reduce bandwidth usage.
-- Office COM Application: If you previously configured Office to receive updates via Configuration Manager, you might need to adjust settings to allow updates from the CDN. Ensure that the *Management of Microsoft 365 Apps for enterprise* policy is disabled, and verify that the OfficeC2RCom application is not registered on client devices.
+- Network Bandwidth: Upgrading devices might require significant network bandwidth, especially when downloading updates from the Office Content Delivery Network (CDN). Ensure that your network infrastructure can handle the traffic or consider using features like Delivery Optimization to reduce bandwidth usage.
+- Office COM Application: If you previously configured Office to receive updates via Configuration Manager, you might need to adjust settings to allow updates from the CDN. Make sure the *Management of Microsoft 365 Apps for enterprise* policy is disabled, and confirm that the OfficeC2RCom application is unregistered on client devices.
 
 ### Upgrade Project and Visio
 
@@ -227,7 +227,7 @@ We recommend that you uninstall any previous versions of Office before installin
   ```css
   SaRAcmd.exe -S OfficeScrubScenario -AcceptEula -OfficeVersion All
   ```
-  Replace `All` with a specific version number if needed (e.g., `2016`, `2019`).
+  Replace `All` with a specific version number if needed (for example, `2016`, `2019`).
 
 - Configure the **RemoveMSI** element in the Office Deployment Tool configuration XML to remove existing MSI-based Office versions during installation.
 
