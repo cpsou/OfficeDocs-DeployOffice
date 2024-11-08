@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2016 and Office 2013."
-ms.date: 09/19/2024
+ms.date: 11/08/2024
 ---
 
 # Plan an upgrade from older versions of Office to Microsoft 365 Apps
@@ -19,15 +19,15 @@ ms.date: 09/19/2024
 
 The following table shows the end of support dates for older versions of Office.
 
-|Office version |End of support date  |
-|---------|---------|
-|Office 2019 |October 14, 2025    |
-|Office 2016 |October 14, 2025    |
-|Office 2013 |April 11, 2023    |
-|Office 2010 |October 13, 2020  |
-|Office 2007 |October 10, 2017  |
+| Office version | End of support date  |
+|----------------|----------------------|
+| Office 2019    | October 14, 2025     |
+| Office 2016    | October 14, 2025     |
+| Office 2013    | April 11, 2023       |
+| Office 2010    | October 13, 2020     |
+| Office 2007    | October 10, 2017     |
 
-This article provides recommendations, information, and links to help IT Pros and Office admins in organizations plan their upgrades from these older versions of Office to Microsoft 365 Apps. If you haven't upgrade from these older versions of Office, we recommend you start now.
+This article provides recommendations, information, and links to help IT Pros and Office admins in organizations plan their upgrades from these older versions of Office to Microsoft 365 Apps. If you haven't upgraded from these older versions of Office, we recommend you start now.
 
 We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://www.microsoft.com/fasttrack) for cloud migrations.
 
@@ -38,7 +38,7 @@ We also recommend business and enterprise customers use the deployment benefits 
 ## What does end of support mean?
 
 Office, like almost all Microsoft products, has a support lifecycle during which we provide bug fixes and security fixes. This lifecycle lasts for some years from the date of the product's initial release. The end of this lifecycle is known as the product's end of support. After Office reaches its end of support, Microsoft no longer provides the following services:
-  
+
 - Technical support for issues
 - Bug fixes for issues that are discovered
 - Security fixes for vulnerabilities that are discovered
@@ -67,7 +67,7 @@ This article provides guidance on upgrading to Microsoft 365 Apps.
 
 ## What is Microsoft 365? What is Microsoft 365 Apps?
 
-Microsoft 365 (and Office 365) provides subscription plans that include access to Office applications and other cloud services, including Teams, Exchange Online, and OneDrive. For more information, see the following resources:
+Microsoft 365 provides subscription plans that include access to Office applications and other cloud services, including Teams, Exchange Online, and OneDrive. For more information, see the following resources:
 
 - [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)
 - [Compare enterprise plans for Office 365](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans)
@@ -102,10 +102,10 @@ See the following system requirements for specific Office server products:
 - **Project Server**  
   - [Software requirements for Project Server 2019](https://go.microsoft.com/fwlink/p/?linkid=2086166)
   - [Software requirements for Project Server 2016](https://go.microsoft.com/fwlink/p/?linkid=2086168)
-  
+
 ## Plan for Microsoft 365
 
-Because Microsoft 365 Apps comes with many enterprise Microsoft 365 (and Office 365) plans, you should review the capabilities of your current plan as part of planning an upgrade to Microsoft 365 Apps. Before deploying Microsoft 365 Apps, for example, you should ensure that all your users have accounts and licenses.
+Because Microsoft 365 Apps comes with many enterprise Microsoft 365 plans, you should review the capabilities of your current plan as part of planning an upgrade to Microsoft 365 Apps. Before deploying Microsoft 365 Apps, for example, you should ensure that all your users have accounts and licenses.
 
 For more information, see the following resources:
 
@@ -121,7 +121,7 @@ If you use the Microsoft Configuration Manager (current branch), you can use the
 ## Assess your infrastructure and environment
 
 To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrastructure and environment, including the following areas:
-  
+
 - Number and distribution of your clients, including required languages.
 - IT infrastructure, including operating systems, mobile device support, user permissions and management, and software distribution methods.
 - Network infrastructure, including connections to the internet and internal software distribution points.
@@ -129,9 +129,111 @@ To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrast
 
 Your assessment of these components influences how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Microsoft 365 Apps](../deploy/assess-microsoft-365-apps.md).
 
+## Upgrade from Office 2016 or Office 2019 to Microsoft 365 Apps
+
+If your organization is currently using Office 2016 or Office 2019, it's important to plan for upgrading to Microsoft 365 Apps before October 14, 2025, when these versions reach their end of support. Upgrading ensures that your users have access to the latest features, security updates, and can connect to Microsoft 365 services without issues.
+
+### Determine readiness for upgrade
+
+To begin, assess which devices have Office 2016 or Office 2019 installed and their readiness for upgrade:
+
+- Use Microsoft Configuration Manager (current branch) and its Office 365 Client Management dashboard to identify devices with legacy Office products.
+- Build dynamic collections in Configuration Manager to group devices based on their Office versions.
+- Use the Microsoft 365 Apps Upgrade Readiness Toolkit to evaluate application compatibility and readiness.
+
+### Upgrade methods
+
+There are several methods to upgrade from Office 2016 or Office 2019 to Microsoft 365 Apps:
+
+- Use Group Policy or Intune CSP settings
+  
+  You can configure Group Policy or Intune Configuration Service Provider (CSP) settings to upgrade Office 2019 to Microsoft 365 Apps for enterprise without deploying a separate installation package. This method leverages the existing Office installation and updates it to Microsoft 365 Apps.
+
+  - Enable the Group Policy setting *Upgrade Office 2019 to Microsoft 365 Apps for enterprise* located at:
+
+    `Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates`
+
+    This sets the following registry key:
+
+    ```
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\OfficeUpdate]
+    "VLtoSubscription"=dword:00000001
+    ```
+
+  - Specify the update channel by setting the *Update Channel* policy:
+
+    ```
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\OfficeUpdate]
+    "UpdateBranch"="<desired update channel>"
+    ```
+    Replace `<desired update channel>` with the appropriate update channel, such as "Deferred" for Semi-Annual Enterprise Channel or "Current" for Monthly Enterprise Channel.
+
+  > [!Note]
+  > The initial upgrade uses the specified update channel. After the upgrade, you can change the update channel to suit your organization's needs.
+
+  The upgrade process may take several days to complete as it depends on Office's update checks.
+
+- Deploy an upgrade package
+
+  Use the Office Deployment Tool to create an installation package that upgrades Office 2016 or Office 2019 to Microsoft 365 Apps.
+
+  - Configure the Office Deployment Tool to remove existing MSI versions of Office during the upgrade by setting the **RemoveMSI** element in your configuration XML file.
+  - Deploy the installation package using your software distribution solution, such as Configuration Manager.
+
+  Example configuration XML:
+
+  ```xml
+  <Configuration>
+    <Add OfficeClientEdition="64" Channel="Current">
+      <Product ID="O365ProPlusRetail">
+        <Language ID="en-us" />
+      </Product>
+    </Add>
+    <RemoveMSI />
+    <Display Level="None" AcceptEULA="True" />
+  </Configuration>
+  ```
+
+  > [!Note]
+  > Upgrading via Configuration Manager requires careful planning to ensure compatibility and minimize disruptions.
+
+### Considerations during the upgrade
+
+- User Prompt: After the upgrade, users may be prompted with a "Your Privacy Matters" dialog. Users need to accept this prompt to complete the upgrade process fully.
+- Update Channels: Plan your update channels accordingly. Microsoft 365 Apps offers several update channels to control how often users receive feature updates. For more information, see [Choose how often to update Office with new features](#).
+- Network Bandwidth: Upgrading devices may require significant network bandwidth, especially when downloading updates from the Office Content Delivery Network (CDN). Ensure that your network infrastructure can handle the traffic or consider using features like Delivery Optimization to reduce bandwidth usage.
+- Office COM Application: If you previously configured Office to receive updates via Configuration Manager, you might need to adjust settings to allow updates from the CDN. Ensure that the *Management of Microsoft 365 Apps for enterprise* policy is disabled, and verify that the OfficeC2RCom application is not registered on client devices.
+
+### Upgrade Project and Visio
+
+If your organization uses Project or Visio, plan to upgrade these applications as well:
+
+- Subscription versions: Consider migrating to Visio Plan 2 or Project Plan 3/5, which are subscription-based and receive regular feature updates.
+- Volume licensed versions: If you prefer volume licensing, you can upgrade to Visio LTSC 2024 or Project 2024.
+
+Refer to:
+
+- [Deployment guide for Project](../deploy/deployment-guide-for-project.md)
+- [Deployment guide for Visio](../deploy/deployment-guide-for-visio.md)
+
+## Automate the removal of older Office versions
+
+We recommend that you uninstall any previous versions of Office before installing Microsoft 365 Apps on a device. You can automate this process:
+
+- Use the Microsoft Support and Recovery Assistant (SaRA) to automate the uninstallation of older Office versions.
+
+  Example command:
+
+  ```css
+  SaRAcmd.exe -S OfficeScrubScenario -AcceptEula -OfficeVersion All
+  ```
+  Replace `All` with a specific version number if needed (e.g., `2016`, `2019`).
+
+- Configure the **RemoveMSI** element in the Office Deployment Tool configuration XML to remove existing MSI-based Office versions during installation.
+
 ## Choose how you want to deploy and update Microsoft 365 Apps
 
-You can deploy and update Microsoft 365 Apps directly from the cloud, from a local source on your local network, or with Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. When you deploy from the cloud, for example, it minimizes your administrative overhead but could require more network bandwidth. When you use Configuration Manager or a local source for deployment, on the other hand, you might have more control over which devices get deployed and updated and the timing of those updates.
+You can deploy and update Microsoft 365 Apps directly from the cloud, from a local source on your local network, or with Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. When you deploy from the cloud, for example, it minimizes your administrative overhead but could require more network bandwidth. When you use Configuration Manager or a local source for deployment, you might have more control over which devices get deployed and updated and the timing of those updates.
 
 For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](../deploy/plan-microsoft-365-apps.md).
 
@@ -156,12 +258,15 @@ For more information, see [Overview of deploying languages for Microsoft 365 App
 
 ## Review new policy settings for Group Policy
 
-As with any new version of Office, there are new Administrative Template files (ADMX/ADML) for Group Policy. All policy settings for Microsoft 365 Apps are located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
+As with any new version of Office, there are new Administrative Template files (ADMX/ADML) for Group Policy. All policy settings for Microsoft 365 Apps are located in:
+
+- `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0`
+- `HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0`
 
 You can [download the Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Group Policy for Microsoft 365 Apps from the Microsoft Download Center for free. The download includes an Excel file that lists all the policy settings for Microsoft 365 Apps.
 
-> [!NOTE]
-> The Administrative Template files (ADMX/ADML) for Microsoft 365 Apps share the same download as Office 2019 and Office 2016. This is because Microsoft 365 Apps, Office 2019 and Office 2016 use the same product version number, 16.0.
+> [!Note]
+> The Administrative Template files (ADMX/ADML) for Microsoft 365 Apps share the same download as Office 2019 and Office 2016. This is because Microsoft 365 Apps, Office 2019, and Office 2016 use the same product version number, 16.0.
 
 If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to apply most user-based policy settings. For more information, see [Overview of Cloud Policy service for Microsoft 365](../admin-center/overview-cloud-policy.md).
 
@@ -173,7 +278,7 @@ For more information, see [Remove existing MSI versions of Office when upgrading
 
 ## Upgrade to newer versions of Project and Visio
 
-The desktop versions of Project and Visio share the same end of support dates as the Office suites for those versions. For example, support for Project 2013 ended on April 11, 2023 and support for Visio 2016 ends on October 14, 2025.
+The desktop versions of Project and Visio share the same end of support dates as the Office suites for those versions. For example, support for Project 2013 ended on April 11, 2023, and support for Visio 2016 ends on October 14, 2025.
 
 Subscription plans for Project and Visio are available and include regular feature updates. These plans are sold separately from plans that include Microsoft 365 Apps. For more information, see the following resources:
 
