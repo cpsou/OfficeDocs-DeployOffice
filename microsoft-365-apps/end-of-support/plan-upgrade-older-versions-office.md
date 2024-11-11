@@ -234,7 +234,7 @@ We recommend that you uninstall any previous versions of Office before installin
 
 - Configure the *RemoveMSI* element in the Office Deployment Tool configuration XML to remove existing MSI-based Office versions during installation.
 
-If you have existing Click-to-Run (C2R) versions of Office installed, you can also remove them during the upgrade process by using the Office Deployment Tool. For more information, see [Configuration options for the Office Deployment Tool](../deploy/configuration-options-for-the-office-2016-deployment-tool.md).
+If you have existing Click-to-Run (C2R) versions of Office installed, you can also remove them during the upgrade process by using the Office Deployment Tool. For more information, see [Configuration options for the Office Deployment Tool](../deploy/office-deployment-tool-configuration-options.md).
 
 ## Choose how you want to deploy and update Microsoft 365 Apps
 
