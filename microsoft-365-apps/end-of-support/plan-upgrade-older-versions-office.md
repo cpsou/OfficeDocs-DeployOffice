@@ -10,12 +10,12 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2016 and Office 2013."
-ms.date: 11/08/2024
+ms.date: 11/11/2024
 ---
 
 # Plan an upgrade from older versions of Office to Microsoft 365 Apps
 
-***Applies to:*** *Volume licensed versions of Office 2019, Office 2016, Office 2013, Office 2010, and Office 2007*
+*Applies to: Volume licensed versions of Office 2019, Office 2016, Office 2013, Office 2010, and Office 2007*
 
 The following table shows the end of support dates for older versions of Office.
 
@@ -53,15 +53,15 @@ Because of these changes, we strongly recommend that you upgrade to a supported 
 
 Before your older version of Office reaches its end of support, you should explore your options and prepare an upgrade plan to either of these latest versions of Office:
   
-- Microsoft 365 Apps, the subscription version of Office that comes with many Microsoft 365 enterprise and business plans.
+- Microsoft 365 Apps, the subscription version of Office for desktop, web, and mobile that comes with many Microsoft 365 enterprise and business plans.
 
-- Office Long Term Service Channel (LTSC) 2024, and Office LTSC 2021 are sold as a one-time purchase, through a volume license agreement, and available for one device per license.
+- Office Long Term Service Channel (LTSC) 2024, which is sold as a one-time purchase through a volume license agreement, and available for one device per license.
 
-A key difference between Microsoft 365 Apps and Office LTSC is that Microsoft 365 Apps is continuously updated, with new features released as frequently as monthly. In contrast, Office LTSC versions include only the features available at their initial release—Office LTSC 2024 in September 2024, and Office LTSC 2021 in September 2021.
+A key difference between Microsoft 365 Apps and Office LTSC is that Microsoft 365 Apps is continuously updated, with new features released as frequently as monthly. In contrast, Office LTSC versions include only the features available at their initial release—Office LTSC 2024 in September 2024.
 
 > [!NOTE]  
-> Office LTSC 2024 and Office LTSC 2021 are designed for specific scenarios, such as regulated devices that cannot accept feature updates, process control devices on manufacturing floors, and specialty systems that cannot connect to the internet.
-> For more information, see [Overview of Office LTSC 2024](/office/ltsc/2024/overview) and [Overview of Office LTSC 2021](/office/ltsc/2021/overview).
+> Office LTSC 2024 is designed for specific scenarios, such as regulated devices that cannot accept feature updates, process control devices on manufacturing floors, and specialty systems that cannot connect to the internet.
+> For more information, see [Overview of Office LTSC 2024](/office/ltsc/2024/overview).
 
 This article provides guidance on upgrading to Microsoft 365 Apps.
 
@@ -75,7 +75,7 @@ Microsoft 365 provides subscription plans that include access to Office applicat
 
 Microsoft 365 Apps is the version of Office that comes with many of those enterprise and business subscription plans. Microsoft 365 Apps includes the full versions of Office apps installed on your client devices. For example, Word, PowerPoint, Excel, Outlook, and OneNote.
 
-Unlike volume licensed versions of Office, Microsoft 365 Apps provides a user-based licensing model that allows your users to install Office on multiple devices with their license. For example, install and use Microsoft 365 Apps on both a Windows 11 device and a Mac, as well as on a mobile device. Other options include [device-based licensing](../licensing-activation/device-based-licensing.md) and [shared computer activation](../deploy/overview-office-deployment-tool.md) for devices used by multiple users, and [extended offline access](../licensing-activation/overview-extended-offline-access.md) for devices that remain offline for extended periods.  
+Unlike volume licensed versions of Office, Microsoft 365 Apps provides a user-based licensing model that allows your users to install Office on multiple devices with their license. For example, you can install and use Microsoft 365 Apps on both a Windows 11 device and a Mac, as well as on a mobile device. Other options include [device-based licensing](../licensing-activation/device-based-licensing.md) and [shared computer activation](../deploy/overview-office-deployment-tool.md) for devices used by multiple users, and [extended offline access](../licensing-activation/overview-extended-offline-access.md) for devices that remain offline for extended periods.
 
 There are also differences in how you deploy, activate, and update Microsoft 365 Apps compared to older volume licensed versions of Office. For more information about Microsoft 365 Apps, see the following information:
 
@@ -88,18 +88,18 @@ Before upgrading to Microsoft 365 Apps, verify that your client devices meet or 
 
 See the following system requirements for specific Office server products:
 
-- **Exchange Server 2019**  
+- Exchange Server 2019  
   - [Exchange Server system requirements](https://go.microsoft.com/fwlink/p/?LinkId=627282)
   - [Outlook license requirements for Exchange features](https://go.microsoft.com/fwlink/p/?LinkID=402388)
 
-- **Skype for Business Server 2019**  
+- Skype for Business Server 2019  
   - [System requirements for Skype for Business Server 2019](https://go.microsoft.com/fwlink/p/?linkid=2031940)
 
-- **SharePoint Server**  
+- SharePoint Server  
   - [SharePoint Server 2019 system requirements](https://go.microsoft.com/fwlink/p/?linkid=824671)
   - [SharePoint Server 2016 system requirements](https://go.microsoft.com/fwlink/p/?linkid=824671)
 
-- **Project Server**  
+- Project Server  
   - [Software requirements for Project Server 2019](https://go.microsoft.com/fwlink/p/?linkid=2086166)
   - [Software requirements for Project Server 2016](https://go.microsoft.com/fwlink/p/?linkid=2086168)
 
@@ -146,7 +146,7 @@ To begin, assess which devices have Office 2016 or Office 2019 installed and the
 There are several methods to upgrade from Office 2016 or Office 2019 to Microsoft 365 Apps:
 
 - Use Group Policy or Intune CSP settings
-  
+
   You can configure Group Policy or Intune Configuration Service Provider (CSP) settings to upgrade Office 2019 to Microsoft 365 Apps for enterprise without deploying a separate installation package. This method uses the existing Office installation and updates it to Microsoft 365 Apps.
 
   - Enable the Group Policy setting *Upgrade Office 2019 to Microsoft 365 Apps for enterprise* located at:
@@ -155,20 +155,21 @@ There are several methods to upgrade from Office 2016 or Office 2019 to Microsof
 
     This sets the following registry key:
 
-    ```
+    ```registry
     [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\OfficeUpdate]
     "VLtoSubscription"=dword:00000001
     ```
 
   - Specify the update channel by setting the *Update Channel* policy:
 
-    ```
+    ```registry
     [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\OfficeUpdate]
     "UpdateBranch"="<desired update channel>"
     ```
+
     Replace `<desired update channel>` with the appropriate update channel, such as "Deferred" for Semi-Annual Enterprise Channel or "Current" for Monthly Enterprise Channel.
 
-  > [!Note]
+  > [!NOTE]
   > The initial upgrade uses the specified update channel. After the upgrade, you can change the update channel to suit your organization's needs.
 
   The upgrade process could take several days to complete as it depends on Office's update checks.
@@ -177,7 +178,7 @@ There are several methods to upgrade from Office 2016 or Office 2019 to Microsof
 
   Use the Office Deployment Tool to create an installation package that upgrades Office 2016 or Office 2019 to Microsoft 365 Apps.
 
-  - Configure the Office Deployment Tool to remove existing Microsoft Installer (MSI) versions of Office during the upgrade by setting the **RemoveMSI** element in your configuration XML file.
+  - Configure the Office Deployment Tool to remove existing Microsoft Installer (MSI) versions of Office during the upgrade by setting the *RemoveMSI* element in your configuration XML file.
   - Deploy the installation package using your software distribution solution, such as Configuration Manager.
 
   Example configuration XML:
@@ -200,7 +201,8 @@ There are several methods to upgrade from Office 2016 or Office 2019 to Microsof
 ### Considerations during the upgrade
 
 - User Prompt: After the upgrade, users could be prompted with a "Your Privacy Matters" dialog. Users need to accept this prompt to complete the upgrade process fully.
-- Update Channels: Plan your update channels accordingly. Microsoft 365 Apps offers several update channels to control how often users receive feature updates. For more information, see [Choose how often to update Office with new features](#).
+- Update Channels: Plan your update channels accordingly. Microsoft 365 Apps offers several update channels to control how often users receive feature updates. For more information, see [Choose how often to update Office with new features](#choose-how-often-to-update-office-with-new-features).
+
 - Network Bandwidth: Upgrading devices might require significant network bandwidth, especially when downloading updates from the Office Content Delivery Network (CDN). Ensure that your network infrastructure can handle the traffic or consider using features like Delivery Optimization to reduce bandwidth usage.
 - Office COM Application: If you previously configured Office to receive updates via Configuration Manager, you might need to adjust settings to allow updates from the CDN. Make sure the *Management of Microsoft 365 Apps for enterprise* policy is disabled, and confirm that the OfficeC2RCom application is unregistered on client devices.
 
@@ -227,9 +229,12 @@ We recommend that you uninstall any previous versions of Office before installin
   ```css
   SaRAcmd.exe -S OfficeScrubScenario -AcceptEula -OfficeVersion All
   ```
-  Replace `All` with a specific version number if needed (for example, `2016`, `2019`).
 
-- Configure the **RemoveMSI** element in the Office Deployment Tool configuration XML to remove existing MSI-based Office versions during installation.
+  Replace `All` with a specific version number if needed (for example, 2016, 2019).
+
+- Configure the *RemoveMSI* element in the Office Deployment Tool configuration XML to remove existing MSI-based Office versions during installation.
+
+If you have existing Click-to-Run (C2R) versions of Office installed, you can also remove them during the upgrade process by using the Office Deployment Tool. For more information, see [Configuration options for the Office Deployment Tool](../deploy/configuration-options-for-the-office-2016-deployment-tool.md).
 
 ## Choose how you want to deploy and update Microsoft 365 Apps
 
@@ -240,6 +245,9 @@ For more information, see [Plan your enterprise deployment of Microsoft 365 Apps
 ## Choose how often to update Office with new features
 
 With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. For example, you can get new features as soon as they’re ready, once a month, or once every six months.
+
+- [!NOTE]
+- To use Microsoft 365 Copilot, customers must be using the Monthly Enterprise Channel or Current Channel.
 
 For more information, see the following resources:
 
@@ -265,16 +273,19 @@ As with any new version of Office, there are new Administrative Template files (
 
 You can [download the Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Group Policy for Microsoft 365 Apps from the Microsoft Download Center for free. The download includes an Excel file that lists all the policy settings for Microsoft 365 Apps.
 
-> [!Note]
+> [!NOTE]
 > The Administrative Template files (ADMX/ADML) for Microsoft 365 Apps share the same download as Office 2019 and Office 2016. This is because Microsoft 365 Apps, Office 2019, and Office 2016 use the same product version number, 16.0.
 
 If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to apply most user-based policy settings. For more information, see [Overview of Cloud Policy service for Microsoft 365](../admin-center/overview-cloud-policy.md).
 
 ## Remove older versions of Office when you upgrade
 
-We recommend that you uninstall any previous versions of Office before installing Microsoft 365 Apps on a device. You can remove these older versions of Office at the same time that you're installing Microsoft 365 Apps.
+It's recommended that you uninstall any previous versions of Office before installing Microsoft 365 Apps on a device. This is especially important for MSI-based installations of Office, which need to be removed before upgrading. You can remove these older versions of Office at the same time that you're installing Microsoft 365 Apps.
 
-For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md).
+If you're upgrading from a Click-to-Run version like Office 2016 or Office 2019, the upgrade process is more straightforward because both versions use the same installation technology. The Microsoft 365 Apps installer will handle the upgrade automatically without the need for manual uninstallation.
+
+For MSI-based installations, it's importatn to remove them before installing Microsoft 365 Apps to prevent conflicts. For more information on how to remove MSI-based versions of Office, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md).
+
 
 ## Upgrade to newer versions of Project and Visio
 
@@ -285,7 +296,7 @@ Subscription plans for Project and Visio are available and include regular featu
 - [Project plans and pricing information](https://www.microsoft.com/microsoft-365/project/compare-microsoft-project-management-software)
 - [Visio plans and pricing information](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options)
 
-The most recent volume licensed versions are Project 2021 and Visio LTSC 2021. These versions were released in September 2021 and don't receive regular feature updates.
+The most recent volume licensed versions are Project 2024 and Visio LTSC 2024. These versions were released in September 2024 and don't receive regular feature updates.
 
 For more information, see the following articles:
 
