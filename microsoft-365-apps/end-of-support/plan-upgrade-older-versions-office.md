@@ -220,7 +220,7 @@ Refer to:
 
 ## Automate the removal of older Office versions
 
-We recommend that you uninstall any previous versions of Office before installing Microsoft 365 Apps on a device. You can automate this process:
+It's recommended that you uninstall any previous versions of Office before installing Microsoft 365 Apps on a device. You can automate this process:
 
 - Use the Microsoft Support and Recovery Assistant (SaRA) to automate the uninstallation of older Office versions.
 
@@ -282,8 +282,7 @@ If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to 
 
 To ensure a smooth installation of Microsoft 365 Apps, it's recommended to uninstall any previous versions of Office on the device. This step is particularly important for MSI-based installations, which must be removed before installing Microsoft 365 Apps to avoid potential conflicts. For more information on removing MSI-based Office versions, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md).
 
-If you're upgrading from a Click-to-Run version, such as Office 2016 or Office 2019, the process is simpler because both versions use the same installation technology. The Microsoft 365 Apps installer handles the upgrade automatically, without needing you to manually uninstall the previous version.
-
+If you have existing Click-to-Run versions of Office installed such as Office 2016 or Office 2019, you can also remove them during the upgrade process by using the Office Deployment Tool. For more information, see [Configuration options for the Office Deployment Tool](../deploy/office-deployment-tool-configuration-options.md).
 
 ## Upgrade to newer versions of Project and Visio
 
