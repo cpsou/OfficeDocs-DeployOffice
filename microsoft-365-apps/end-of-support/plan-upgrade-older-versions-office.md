@@ -280,11 +280,9 @@ If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to 
 
 ## Remove older versions of Office when you upgrade
 
-It's recommended that you uninstall any previous versions of Office before installing Microsoft 365 Apps on a device. This is especially important for MSI-based installations of Office, which need to be removed before upgrading. You can remove these older versions of Office at the same time that you're installing Microsoft 365 Apps.
+To ensure a smooth installation of Microsoft 365 Apps, it's recommended to uninstall any previous versions of Office on the device. This step is particularly important for MSI-based installations, which must be removed before installing Microsoft 365 Apps to avoid potential conflicts. For more information on removing MSI-based Office versions, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md).
 
-If you're upgrading from a Click-to-Run version like Office 2016 or Office 2019, the upgrade process is more straightforward because both versions use the same installation technology. The Microsoft 365 Apps installer will handle the upgrade automatically without the need for manual uninstallation.
-
-For MSI-based installations, it's importatn to remove them before installing Microsoft 365 Apps to prevent conflicts. For more information on how to remove MSI-based versions of Office, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md).
+If you're upgrading from a Click-to-Run version, such as Office 2016 or Office 2019, the process is simpler because both versions use the same installation technology. The Microsoft 365 Apps installer handles the upgrade automatically, without needing you to manually uninstall the previous version.
 
 
 ## Upgrade to newer versions of Project and Visio
