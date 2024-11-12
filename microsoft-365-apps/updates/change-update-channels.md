@@ -158,7 +158,7 @@ Priority|Management Type|Registry Value|Registry Path
 3rd|Policy Setting|UpdatePath|HKLM\SOFTWARE\Policies\Microsoft\office\16.0\Common\officeupdate
 4th|Policy Setting|UpdateBranch|HKLM\SOFTWARE\Policies\Microsoft\office\16.0\Common\officeupdate
 5th|ODT|UpdateUrl|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
-6th|Unmanaged|UnmanagedUpdateURL*|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
+6th|Unmanaged|UnmanagedUpdateURL<sup>*</sup>|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
 7th|Unmanaged|CDNBaseUrl|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
 
-*Only set on unmanaged devices. See [the second notes section](../deploy/manage-software-download-settings-office-365.md#choose-how-often-to-get-feature-updates-for-office) on how the Microsoft 365 Apps determine if the installation qualifies as unmanaged.
+<sup>*</sup>_Only set on unmanaged devices. See [the second notes section](../deploy/manage-software-download-settings-office-365.md#choose-how-often-to-get-feature-updates-for-office) on how the Microsoft 365 Apps determine if the installation qualifies as unmanaged._
