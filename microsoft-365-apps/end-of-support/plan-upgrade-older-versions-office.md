@@ -246,8 +246,8 @@ For more information, see [Plan your enterprise deployment of Microsoft 365 Apps
 
 With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. For example, you can get new features as soon as they’re ready, once a month, or once every six months.
 
-- [!NOTE]
-- To use Microsoft 365 Copilot, customers must be using the Monthly Enterprise Channel or Current Channel.
+> [!NOTE]
+> To use Microsoft 365 Copilot, customers must be using the Monthly Enterprise Channel or Current Channel.
 
 For more information, see the following resources:
 
