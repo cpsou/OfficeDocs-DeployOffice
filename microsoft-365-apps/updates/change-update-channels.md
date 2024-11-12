@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 03/25/2024
+ms.date: 11/12/2024
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
@@ -157,6 +157,8 @@ Priority|Management Type|Registry Value|Registry Path
 2nd|Cloud Update|UpdateBranch|HKLM\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate
 3rd|Policy Setting|UpdatePath|HKLM\SOFTWARE\Policies\Microsoft\office\16.0\Common\officeupdate
 4th|Policy Setting|UpdateBranch|HKLM\SOFTWARE\Policies\Microsoft\office\16.0\Common\officeupdate
-5th|ODT|UpdateUrl or UpdatePath|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
-6th|Unmanaged|UnmanagedUpdateURL|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
+5th|ODT|UpdateUrl|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
+6th|Unmanaged|UnmanagedUpdateURL*|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
 7th|Unmanaged|CDNBaseUrl|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
+
+*Only set on unmanaged devices. See [the 2nd notes section](../deploy/manage-software-download-settings-office-365.md#choose-how-often-to-get-feature-updates-for-office) on how the Microsoft 365 Apps determine if the installation qualifies as unmanaged.
