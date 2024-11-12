@@ -19,7 +19,7 @@ items:
 
   - name: Other Office products
     items:
-      - name: Office 2016, 2013, 2010, and 2007
+      - name: Office 2019, 2016, 2013, 2010, and 2007
         href: plan-upgrade-older-versions-office.md
 
   - name: Upgrade assistance
