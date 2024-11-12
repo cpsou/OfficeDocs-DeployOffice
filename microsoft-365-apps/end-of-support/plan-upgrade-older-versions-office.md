@@ -195,7 +195,7 @@ There are several methods to upgrade from Office 2016 or Office 2019 to Microsof
   </Configuration>
   ```
 
-  > [!Note]
+  > [!NOTE]
   > Upgrading via Configuration Manager requires careful planning to ensure compatibility and minimize disruptions.
 
 ### Considerations during the upgrade
