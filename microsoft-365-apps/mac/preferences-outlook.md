@@ -46,6 +46,7 @@ The following list shows the preferences that are covered in this article:
 - [Block access to mailboxes from unauthorized domains](#block-access-to-mailboxes-from-unauthorized-domains)
 - [Disable automatic updating of weather location](#disable-automatic-updating-of-weather-location)
 - [Disable calendar sharing permissions](#disable-calendar-sharing-permissions)
+- [Disable Copy or Move emails between accounts](#disable-copy-or-move-emails-between-accounts)
 - [Disable "Do Not Forward"](#disable-do-not-forward)
 - [Disable "Do not send a response"](#disable-do-not-send-a-response)
 - [Disable "Encrypt-Only"](#disable-encrypt-only)
@@ -492,6 +493,19 @@ Prevent users from viewing Focused Inbox.
 |Possible values|  false (default) <br/> true  |
 |Requires Configuration Profile| Yes |
 |Availability| 16.66 |
+
+### Disable Copy or Move emails between accounts
+
+Prevent users from copying or moving emails between accounts.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key|ItemsToOtherAccountsEnabled |
+|Data Type|Integer   |
+|Possible values| 0 = Disable move/copy between accounts <br/> 1 = Allow move/copy between accounts (Default) |
+|Requires Configuration Profile| No |
+|Availability|16.87 |
 
 ## Related articles
 
