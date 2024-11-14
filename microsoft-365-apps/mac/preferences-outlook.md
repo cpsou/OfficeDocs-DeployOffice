@@ -496,7 +496,7 @@ Prevent users from viewing Focused Inbox.
 
 ### Disable Copy or Move emails between accounts
 
-Prevent users to copy or move emails between accounts.
+Prevent users from copying or moving emails between accounts.
 
 |Category|Details|
 |:-----|:-----|
