@@ -48,10 +48,10 @@ Microsoft 365 Apps uses other Microsoft services for compliance, including:
 
 Microsoft Intune offers robust capabilities to strengthen your compliance posture within Microsoft 365 Apps:
 
-- **Device Compliance Policies**: Set rules that devices must meet to be compliant, including requiring a minimum operating system version and enforcing password complexity. For more information, see [Device Compliance Policies](/mem/intune/protect/device-compliance-get-started).
-- **Conditional Access**: Use device compliance status to control access to organizational resources, ensuring that only compliant devices can access sensitive data. For more information, see [Conditional Access](/mem/intune/protect/conditional-access).
-- **Integration with Microsoft Purview**: Apply auditing and reporting features to monitor data usage and ensure adherence to compliance policies. For more information, see [Device Protection Features](/mem/intune/protect/device-protect).
-- **Actions for Noncompliance**: Configure automatic actions for devices that fall out of compliance, such as sending notifications or restricting access. For more information, see [Actions for Noncompliance](/mem/intune/protect/actions-for-noncompliance).
+- [Device Compliance Policies](/mem/intune/protect/device-compliance-get-started): Set rules that devices must meet to be compliant, including requiring a minimum operating system version and enforcing password complexity.
+- [Conditional Access](/mem/intune/protect/conditional-access): Use device compliance status to control access to organizational resources, ensuring that only compliant devices can access sensitive data.
+- [Integration with Microsoft Purview](/mem/intune/protect/device-protect): Apply auditing and reporting features to monitor data usage and ensure adherence to compliance policies.
+- [Actions for Noncompliance](/mem/intune/protect/actions-for-noncompliance): Configure automatic actions for devices that fall out of compliance, such as sending notifications or restricting access.
 
 These capabilities enhance compliance management by ensuring devices and data within your organization adhere to defined security and compliance policies.
 
@@ -59,8 +59,8 @@ These capabilities enhance compliance management by ensuring devices and data wi
 
 Microsoft 365 Apps ensure compliance with data residency requirements by supporting Microsoft Cloud's regional and global data storage policies. These policies include:
 
-- **Data location**: Data is stored in Microsoft-managed data centers with Multi-Geo and Advanced Data Residency options.
-- **Encryption**: Data is encrypted at rest and in transit.
+- Data location: Data is stored in Microsoft-managed data centers with Multi-Geo and Advanced Data Residency options.
+- Encryption: Data is encrypted at rest and in transit.
 
 For detailed information, see [Overview of Data Residency in Microsoft 365](/microsoft-365/enterprise/m365-dr-overview#overview-of-data-residency).
 
