@@ -58,7 +58,7 @@ For more information about Intune compliance capabilities, visit the [Microsoft 
 Microsoft 365 Apps ensure compliance with data residency requirements by supporting Microsoft Cloud's regional and global data storage policies. These policies include:
 
 - Data location: Data is stored in Microsoft-managed data centers with Multi-Geo and Advanced Data Residency options.
-- EU Data Boundary: Ensures that data belonging to EU customers is stored and processed within the EU. For more details, see [EU Data Boundary](https://www.microsoft.com/trust-center/privacy/european-data-boundary-eudb).
+- EU Data Boundary: Ensures that data belonging to EU customers is stored and processed within the EU. For more details, see [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn).
 - Encryption: Data is encrypted at rest and in transit.
 
 For more information, see [Overview of Data Residency in Microsoft 365](/microsoft-365/enterprise/m365-dr-overview#overview-of-data-residency).
