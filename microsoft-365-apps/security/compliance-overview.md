@@ -66,6 +66,8 @@ For detailed information, see [Overview of Data Residency in Microsoft 365](/mic
 
 ## Compliance features
 
+Microsoft 365 Apps include several compliance features that help organizations meet regulatory requirements, manage data lifecycles, and protect sensitive information. These features are designed to ensure your organization can effectively monitor, classify, and safeguard its data while maintaining compliance with industry standards. The following sections highlight key compliance features available in Microsoft 365 Apps.
+
 ### Data lifecycle management
 
 Microsoft 365 Apps support data lifecycle management through retention policies and labels. These features help organizations retain or delete data based on compliance requirements. For setup instructions, see [Retention policies and labels](/microsoft-365/compliance/retention).
