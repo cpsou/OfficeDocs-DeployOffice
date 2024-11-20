@@ -7,8 +7,8 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.collection: 
- - tier2
- - essentials-security
+ - tier1
+ - essentials-compliance
 ms.localizationpriority: medium
 description: Learn about compliance certifications, dependencies, and features in Microsoft 365 Apps supporting data protection and regulatory requirements.
 ms.date: 11/20/2024
