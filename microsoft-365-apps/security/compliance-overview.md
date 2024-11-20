@@ -33,40 +33,39 @@ Microsoft 365 Apps are covered under several compliance certifications and regul
 | HIPAA                     | U.S. Health Insurance Portability and Accountability Act | United States |
 | SOC 2 Type 2              | Service Organization Controls for data security | Global |
 
-For more certifications, visit [Microsoft Compliance Offerings](/compliance/regulatory/offering-home).
+For additional certifications, visit [Microsoft Compliance Offerings](/compliance/regulatory/offering-home).
 
 ## Compliance dependencies
 
-Microsoft 365 Apps uses other Microsoft services for compliance, including:
+Microsoft 365 Apps leverage other Microsoft services for compliance, including:
 
 - [Microsoft Purview](/purview/purview): A suite of data governance and compliance tools.
 - [Microsoft Entra ID](/entra/fundamentals/whatis): Identity and access management, formerly known as Azure Active Directory (Azure AD).
 - [Microsoft Purview Compliance Manager](/purview/compliance-manager): Tools for managing compliance across your organization.
-- [Microsoft Intune](/mem): Enables device compliance policies, conditional access, and other compliance features.
+- [Microsoft Intune](/mem): Enforces device compliance and conditional access policies to protect access to Microsoft 365 Apps.
 
 ## Microsoft Intune capabilities for compliance
 
-Microsoft Intune offers robust capabilities to strengthen your compliance posture within Microsoft 365 Apps:
+Microsoft Intune helps enforce compliance policies and protect organizational data specifically for Microsoft 365 Apps:
 
-- [Device Compliance Policies](/mem/intune/protect/device-compliance-get-started): Set rules that devices must meet to be compliant, including requiring a minimum operating system version and enforcing password complexity.
-- [Conditional Access](/mem/intune/protect/conditional-access): Use device compliance status to control access to organizational resources, ensuring that only compliant devices can access sensitive data.
-- [Integration with Microsoft Purview](/mem/intune/protect/device-protect): Apply auditing and reporting features to monitor data usage and ensure adherence to compliance policies.
-- [Actions for Noncompliance](/mem/intune/protect/actions-for-noncompliance): Configure automatic actions for devices that fall out of compliance, such as sending notifications or restricting access.
+- **Conditional Access**: Ensures only compliant devices running Microsoft 365 Apps can access sensitive data. See [Conditional Access](/mem/intune/protect/conditional-access).
+- **Device Compliance Enforcement**: Enforces device compliance policies to meet organizational security requirements. See [Device Compliance Policies](/mem/intune/protect/device-compliance-get-started).
 
-These capabilities enhance compliance management by ensuring devices and data within your organization adhere to defined security and compliance policies.
+For more information about Intune compliance capabilities, visit the [Microsoft Intune documentation](/mem).
 
 ## Data residency and protection
 
 Microsoft 365 Apps ensure compliance with data residency requirements by supporting Microsoft Cloud's regional and global data storage policies. These policies include:
 
 - Data location: Data is stored in Microsoft-managed data centers with Multi-Geo and Advanced Data Residency options.
+- EU Data Boundary: Ensures that data belonging to EU customers is stored and processed within the EU. For more details, see [EU Data Boundary](https://www.microsoft.com/trust-center/privacy/european-data-boundary-eudb).
 - Encryption: Data is encrypted at rest and in transit.
 
-For detailed information, see [Overview of Data Residency in Microsoft 365](/microsoft-365/enterprise/m365-dr-overview#overview-of-data-residency).
+For more information, see [Overview of Data Residency in Microsoft 365](/microsoft-365/enterprise/m365-dr-overview#overview-of-data-residency).
 
 ## Compliance features
 
-Microsoft 365 Apps include several compliance features that help organizations meet regulatory requirements, manage data lifecycles, and protect sensitive information. These features are designed to ensure your organization can effectively monitor, classify, and safeguard its data while maintaining compliance with industry standards. The following sections highlight key compliance features available in Microsoft 365 Apps.
+Microsoft 365 Apps include several compliance features that help organizations meet regulatory requirements, manage data lifecycles, and protect sensitive information. These features are designed to ensure your organization can effectively monitor, classify, and safeguard its data while maintaining compliance with industry standards.
 
 ### Data lifecycle management
 
@@ -85,14 +84,13 @@ For more information, visit the [Microsoft Purview compliance portal](/complianc
 
 Microsoft 365 Apps include privacy controls to manage data collection, storage, and sharing:
 
-- Data Loss Prevention (DLP): Prevents sensitive information from being shared outside the organization.
-- Sensitivity Labels: Enables classification and protection of documents and emails.
+- [Data Loss Prevention (DLP)](/purview/dlp-learn-about-dlp): Prevents sensitive information from being shared outside the organization.
+- [Sensitivity Labels](/purview/sensitivity-labels): Enables classification and protection of documents and emails.
 
-For details, see [Privacy controls in Microsoft 365 Apps](/deployoffice/privacy/overview-privacy-controls).
+For details about diagnostic data and connected experiences, see [Privacy controls in Microsoft 365 Apps](/deployoffice/privacy/overview-privacy-controls).
 
 ## Related articles
 
 - [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
 - [Microsoft Trust Center](https://www.microsoft.com/trust-center)
-- [Microsoft Compliance](/compliance)
-- [Microsoft Purview compliance portal](https://compliance.microsoft.com)
+- [Microsoft Purview compliance portal](https://compliance.microsoft.com/)
