@@ -275,7 +275,7 @@ To deactivate a profile, follow these steps:
 5. Review the information and click the link to **deactivate the management through cloud update**.
 6. Fill out the form and click **submit**.
 
-The cloud update status for devices in inventory on a deactivated profile will be updated to **Eligible for *ChannelName*** and update management from the service will stop. You can change the following registry value to regain control:
+The cloud update status for devices in inventory on a deactivated profile changes to **Eligible for *ChannelName*** and update management from the service stops. You can change the following registry value to regain control:
 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate`  
 `Value: IgnoreGPO=0`
 
