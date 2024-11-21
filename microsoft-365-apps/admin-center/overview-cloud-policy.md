@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 11/19/2024
+ms.date: 11/21/2024
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -135,8 +135,8 @@ For more information, see [Security baseline for Microsoft 365 Apps for enterpri
 ### Accessibility baseline
 Most of our customers are making strides to become more accessible as an organization. The accessibility baseline enables IT Pros to configure accessibility policies to empower their end users to create accessible content and limit the ability to remove accessibility checker settings from being disabled.
 
-## Auditing changes
-Cloud Policy service integrates with [Microsoft Purview audit](/purview/audit-solutions-overview). When enabled, events such as policy configuration creation, deletion, changes, and priority order adjustments are sent to the Purview service. You can use the portal or PowerShell to [search the audit log](/purview/audit-search?tabs=microsoft-purview-portal) for reviewing any changes. For more information on captured operations and data format, refer to the [activity documentation](/Purview/audit-log-activities#microsoft-365-apps-admin-services-cloud-policy-activities) and [schema reference](/office/office-365-management-api/office-365-management-activity-api-schema#microsoft-365-apps-admin-services-cloud-policy-schema).
+## Microsoft Purview support
+Cloud Policy service supports the [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). Events such as the creation, deletion, modification of policy configurations, changes to configured policy settings, and adjustments to priority order are sent to the Purview service. You can use the portal or PowerShell to [search the audit log](/purview/audit-search?tabs=microsoft-purview-portal) for such changes. For more information on captured operations and data format, refer to the [activity documentation](/Purview/audit-log-activities#microsoft-365-apps-admin-services-cloud-policy-activities) and [schema reference](/office/office-365-management-api/office-365-management-activity-api-schema).
 
 ## Additional information about Cloud Policy
 
