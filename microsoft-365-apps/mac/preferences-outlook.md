@@ -267,7 +267,7 @@ Prevent users from applying the **Encrypt-Only** option to emails when using Mic
 |Key|DisableEncryptOnly |
 |Data Type| Boolean |
 |Possible values| false (default) <br/> true  |
-|Requires Configuration Profile| No |
+|Requires Configuration Profile| Yes |
 |Availability|16.40 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
