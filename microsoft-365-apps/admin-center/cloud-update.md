@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 09/24/2024
+ms.date: 11/21/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -275,7 +275,7 @@ To deactivate a profile, follow these steps:
 5. Review the information and click the link to **deactivate the management through cloud update**.
 6. Fill out the form and click **submit**.
 
-The cloud update status for devices in inventory on a deactivated profile will be updated to **Eligible for *ChannelName*** and update management from the service will stop. You can change the following registry value to regain control:
+The cloud update status for devices in inventory on a deactivated profile changes to **Eligible for *ChannelName*** and update management from the service stops. You can change the following registry value to regain control:
 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate`  
 `Value: IgnoreGPO=0`
 
@@ -291,6 +291,9 @@ Cloud updates take priority over existing update management settings for Microso
 With cloud update enabled, devices are automatically mapped to the corresponding profile based on their update channel. For example, all devices on Current Channel map to the Current Channel profile. Once the devices are mapped to a profile, cloud update delivers the appropriate policies to these devices.
 
 Cloud update currently supports management for devices on Current Channel and Monthly Enterprise Channel. Devices on any other update channel won't be managed by cloud update until they're moved to a channel that cloud update supports.
+
+## Microsoft Purview support
+Cloud update supports the [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). When auditing is enabled, any changes to a profile’s configuration, tenant-wide settings, or actions triggered for managed devices are tracked. You can use the portal or PowerShell to [search the audit log](/purview/audit-search?tabs=microsoft-purview-portal) for such changes. For more information on captured operations and data format, refer to the [activity documentation](/Purview/audit-log-activities#microsoft-365-apps-admin-services-cloud-update-activities) and [schema reference](/office/office-365-management-api/office-365-management-activity-api-schema).
 
 ## Troubleshooting
 > [!IMPORTANT]

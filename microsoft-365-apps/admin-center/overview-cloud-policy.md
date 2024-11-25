@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 09/18/2024
+ms.date: 11/21/2024
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -19,7 +19,7 @@ ms.date: 09/18/2024
 > [!NOTE]
 > "Office cloud policy service" has been renamed to "Cloud Policy service for Microsoft 365." In most cases, we'll just refer to it as Cloud Policy.
 
-[Cloud Policy service for Microsoft 365](https://config.office.com/officeSettings/officePolicies) lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. Policy settings are available for devices running Windows, macOS, iOS, and Android, although not all policy settings are available for all operating systems. You can also enforce some policy settings for Office for the web and Loop, both for guest users who are signed in and for users who access documents anonymously.
+[Cloud Policy service for Microsoft 365](https://config.office.com/officeSettings/officePolicies) lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. Policy settings are available for devices running Windows, macOS, iOS, and Android, although not all policy settings are available for all operating systems. You can also enforce some policy settings for Office for the web and Loop, both for guests who are signed in and for users who access documents anonymously.
 
 Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.office.com/). The service includes many of the same user-based policy settings that are available in Group Policy. You can also use Cloud Policy directly in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431), under **Apps** > **Policy** > **Policies for Office apps**.  
 
@@ -66,7 +66,7 @@ Cloud Policy Service supports the use of [Microsoft Entra groups](/entra/fundame
 - Policies only apply to **user objects**. 
 - **User objects** must be present in Microsoft Entra ID and have a [supported license](#licensing-requirements) assigned.
 - Nested groups support up to three levels deep.
-- A group might contain both **device objects** and **user objects**, but the **device objects** will be ignored.
+- A group might contain both **device objects** and **user objects**, but the **device objects** are ignored.
 
 ## Steps for creating a policy configuration
 
@@ -99,13 +99,13 @@ To see which policies are configured when you're editing a policy configuration,
 
 To change the priority order for the policy configurations, select **Reorder priority** on the **Policy configurations** page.
 
-If you want to export a policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Export**.  This action generates a CSV file for download.
+If you want to export a policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Export**. This action generates a CSV file for download.
 
 ## How the policy configuration is applied
 
 The Click-to-Run service used by Microsoft 365 Apps for enterprise checks in with the Cloud Policy service regularly to see if there are any policies that pertain to the signed in user. If there are, then the appropriate policies are applied and take effect the next time the user opens an Office app, such as Word or Excel.
 
-- When an Office app is launched or the signed in user changes, the Click-to-Run service determines if it is time to retrieve policies for the signed in user.
+- When an Office app is launched or the signed in user changes, the Click-to-Run service determines if it's time to retrieve policies for the signed in user.
     - If this is the user’s first sign in, the check-in call is made to retrieve policies for the signed in user.
     - If the user has previously signed in, the check-in call is made only if the check-in interval has lapsed.
 - When the service receives the check-in call, Microsoft Entra group membership is determined for the user.
@@ -134,6 +134,9 @@ For more information, see [Security baseline for Microsoft 365 Apps for enterpri
 
 ### Accessibility baseline
 Most of our customers are making strides to become more accessible as an organization. The accessibility baseline enables IT Pros to configure accessibility policies to empower their end users to create accessible content and limit the ability to remove accessibility checker settings from being disabled.
+
+## Microsoft Purview support
+Cloud Policy service supports the [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). When auditing is enabled, events such as the creation, deletion, modification of policy configurations, changes to configured policy settings, and adjustments to priority order are tracked. You can use the portal or PowerShell to [search the audit log](/purview/audit-search?tabs=microsoft-purview-portal) for such changes. For more information on captured operations and data format, refer to the [activity documentation](/Purview/audit-log-activities#microsoft-365-apps-admin-services-cloud-policy-activities) and [schema reference](/office/office-365-management-api/office-365-management-activity-api-schema#m365-apps-admin-services-cloud-policy-schema).
 
 ## Additional information about Cloud Policy
 
