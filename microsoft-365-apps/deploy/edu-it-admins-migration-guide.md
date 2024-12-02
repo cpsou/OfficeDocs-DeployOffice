@@ -17,10 +17,7 @@ ms.date: 12/02/2024
 
 [!INCLUDE [OneNote Windows 10 eos](../includes/onenote-win10-eos.md)]
 
-As OneNote for Windows 10 nears the end of support, it's crucial for IT admins to migrate users to OneNote on Windows. This move ensures users benefit from the latest technology improvements and have a consistent experience with a single OneNote application on Windows.
-
-> [!NOTE]
-> IT admins should plan migrations to OneNote on Windows during holiday breaks or the Summer 2025 break. These periods allow for a smoother transition with minimal disruption to students and staff, ensuring readiness before support ends in October 2025.
+As OneNote for Windows 10 nears the end of support, it's crucial for IT admins to migrate users to OneNote on Windows. This move ensures users benefit from the latest technology improvements and have a consistent experience with a single OneNote application on Windows. IT admins should plan migrations to OneNote on Windows during holiday breaks or the Summer 2025 break. These periods allow for a smoother transition with minimal disruption to students and staff, ensuring readiness before support ends in October 2025.
 
 ## EDU Tenants current migration approach
 
@@ -33,7 +30,7 @@ Many education institutions plan to handle this migration in one of two ways:
 
 To simplify the transition, the OneNote team developed a [migration script](onenote-for-windows-10-migration-guide.md). The script is designed to prevent common issues, such as data loss due to unsynced notebooks, and ensures that users' notebooks fully sync during the migration. It's especially helpful for users whose notebooks didn't sync completely before the migration.
 
-## Critical final steps: uninstalling OneNote for Windows 10
+## Critical final steps: Uninstalling OneNote for Windows 10
 
 To finalize the migration and guarantee that users are accessing the correct version of OneNote, IT admins must uninstall the OneNote for Windows 10 app. If the app isn't removed, users could accidentally revert to the old version, leading to confusion and potential data sync problems.
 
