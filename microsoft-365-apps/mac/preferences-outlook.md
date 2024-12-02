@@ -36,7 +36,7 @@ When you change preferences in Terminal, users can override the value in the Out
 All of these keys are CFPreferences-compatible, which means that they can be set by using enterprise management (MDM) software for Mac, such as Microsoft Intune and Jamf Pro.
 
 > [!IMPORTANT]
-> Preferences that are marked as Yes to 'Requires Configuration Profile' in the consecutive tables can only be set via a Configuration Profile. In these case, use of the defaults command is ineffective.
+> Preferences that are marked as Yes to 'Requires Configuration Profile' in the consecutive tables can only be set via a Configuration Profile. In these cases, use of the defaults command is ineffective.
 
 The following list shows the preferences that are covered in this article:
 
