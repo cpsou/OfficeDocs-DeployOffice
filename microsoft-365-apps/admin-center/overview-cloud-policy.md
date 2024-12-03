@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 11/21/2024
+ms.date: 12/03/2024
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -136,7 +136,7 @@ For more information, see [Security baseline for Microsoft 365 Apps for enterpri
 Most of our customers are making strides to become more accessible as an organization. The accessibility baseline enables IT Pros to configure accessibility policies to empower their end users to create accessible content and limit the ability to remove accessibility checker settings from being disabled.
 
 ## Microsoft Purview support
-Cloud Policy service supports the [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). When auditing is enabled, events such as the creation, deletion, modification of policy configurations, changes to configured policy settings, and adjustments to priority order are tracked. You can use the portal or PowerShell to [search the audit log](/purview/audit-search?tabs=microsoft-purview-portal) for such changes. For more information on captured operations and data format, refer to the [activity documentation](/Purview/audit-log-activities#microsoft-365-apps-admin-services-cloud-policy-activities) and [schema reference](/office/office-365-management-api/office-365-management-activity-api-schema#m365-apps-admin-services-cloud-policy-schema).
+Cloud Policy service supports the [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). When auditing is enabled, events such as the creation, deletion, modification of policy configurations, changes to configured policy settings, and adjustments to priority order are tracked. You can use the portal or PowerShell to [search the audit log](/purview/audit-search?tabs=microsoft-purview-portal) for such changes. For more information on captured operations and data format, refer to the [activity documentation](/Purview/audit-log-activities#microsoft-365-apps-admin-services-cloud-policy-activities) and [schema reference](/office/office-365-management-api/office-365-management-activity-api-schema#cloud-policy-service-schema).
 
 ## Additional information about Cloud Policy
 
@@ -149,19 +149,11 @@ Cloud Policy service supports the [Microsoft Purview auditing solutions](/purvie
 
 If the expected policies aren't correctly applied to a user's device, try the following actions:
 - Make sure the user is signed into Microsoft 365 Apps for enterprise, activated it, and has a valid license.
-
 - Make sure the user is part of the appropriate security group.
-
 - Verify you aren't using an authenticated proxy.
-
 - Check the priority of the policy configurations. If the user is in multiple security groups that have policy configurations assigned to them, then the priority of the policy configurations determines which policies take effect.
-
-- In some cases, policies might not be applied correctly if two users with different policies sign into Office on the same device during the same Windows session.  
-
+- In some cases, policies might not be applied correctly if two users with different policies sign into Office on the same device during the same Windows session.
 - Policy settings retrieved from Cloud Policy are stored in the Windows registry under HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0. This key is overwritten each time a new set of policies is retrieved from the policy service during the check-in process.
-
 - Policy service check-in activity is stored in the Windows registry under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. Deleting this key and restarting the Office apps will trigger the policy service to check in the next time an Office app is launched.
-
-- If you want to see the next time a device running Windows is scheduled to check with Cloud Policy, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.  
-
+- If you want to see the next time a device running Windows is scheduled to check with Cloud Policy, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.
 - You might encounter a FetchInterval value of 0.  If this value exists, the client waits 24 hours from the last check-in before attempting to check with Cloud Policy again.
