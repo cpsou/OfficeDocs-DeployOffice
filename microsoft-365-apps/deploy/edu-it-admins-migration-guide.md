@@ -1,5 +1,5 @@
 ---
-title: "Migration guide for Microsoft 365 Education Admins moving users from OneNote for Windows 10 to OneNote on Windows"
+title: "OneNote Migration Guide for Microsoft 365 Education Admins"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
@@ -10,14 +10,14 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Guide for Microsoft 365 Education (EDU) admins on migrating from OneNote for Windows 10 to OneNote on Windows, including supported migration scripts and steps to uninstall old versions"
-ms.date: 12/02/2024
+ms.date: 12/03/2024
 ---
 
-# Migration guide for Microsoft 365 Education Admins moving users from OneNote for Windows 10 to OneNote on Windows
+# OneNote Migration Guide for Microsoft 365 Education Admins
 
 [!INCLUDE [OneNote Windows 10 eos](../includes/onenote-win10-eos.md)]
 
-As OneNote for Windows 10 nears the end of support, it's crucial for IT admins to migrate users to OneNote on Windows. This move ensures users benefit from the latest technology improvements and have a consistent experience with a single OneNote application on Windows. IT admins should plan migrations to OneNote on Windows during holiday breaks or the Summer 2025 break. These periods allow for a smoother transition with minimal disruption to students and staff, ensuring readiness before support ends in October 2025.
+As OneNote for Windows 10 nears the end of support, it's crucial for IT admins to migrate users to OneNote on Windows. This move ensures users benefit from the latest technology improvements and have a consistent experience with a single OneNote application on Windows. IT admins should plan migrations to OneNote on Windows during periods when students and staff aren't actively using school equipment, such as school breaks or other noninstructional times.
 
 ## EDU Tenants current migration approach
 
@@ -34,7 +34,7 @@ To simplify the transition, the OneNote team developed a [migration script](onen
 
 To finalize the migration and guarantee that users are accessing the correct version of OneNote, IT admins must uninstall the OneNote for Windows 10 app. If the app isn't removed, users could accidentally revert to the old version, leading to confusion and potential data sync problems.
 
-You can use the following PowerShell function to uninstall OneNote for Windows 10 (UWP):
+You can customize this sample PowerShell function to uninstall OneNote for Windows 10 (UWP):
 
 ```powershell
 function uninstallUWP { 
