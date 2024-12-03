@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 11/21/2024
+ms.date: 12/03/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -293,7 +293,7 @@ With cloud update enabled, devices are automatically mapped to the corresponding
 Cloud update currently supports management for devices on Current Channel and Monthly Enterprise Channel. Devices on any other update channel won't be managed by cloud update until they're moved to a channel that cloud update supports.
 
 ## Microsoft Purview support
-Cloud update supports the [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). When auditing is enabled, any changes to a profile’s configuration, tenant-wide settings, or actions triggered for managed devices are tracked. You can use the portal or PowerShell to [search the audit log](/purview/audit-search?tabs=microsoft-purview-portal) for such changes. For more information on captured operations and data format, refer to the [activity documentation](/Purview/audit-log-activities#microsoft-365-apps-admin-services-cloud-update-activities) and [schema reference](/office/office-365-management-api/office-365-management-activity-api-schema).
+Cloud update supports the [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). When auditing is enabled, any changes to a profile’s configuration, tenant-wide settings, or actions triggered for managed devices are tracked. You can use the portal or PowerShell to [search the audit log](/purview/audit-search?tabs=microsoft-purview-portal) for such changes. For more information on captured operations and data format, refer to the [activity documentation](/Purview/audit-log-activities#microsoft-365-apps-admin-services-cloud-update-activities) and [schema reference](/office/office-365-management-api/office-365-management-activity-api-schema#cloud-update-profile-configuration-schema).
 
 ## Troubleshooting
 > [!IMPORTANT]
