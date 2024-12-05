@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 recommendations: false
 description: "Provides admins with information about Microsoft AutoUpdate's deferred updates feature, including how to set deferral days and versions for individual applications."
-ms.date: 012/05/2024
+ms.date: 12/05/2024
 ---
 
 # Microsoft AutoUpdate and Deferred Updates
