@@ -93,7 +93,7 @@ This example shows how to set Deferral Days to seven for Microsoft Word 2019 and
 
 This feature allows users to set an upper limit to the update version. That is, discovered updates are offered/applied to and including the specified version.
 
-To allow for updates to be discovered and applied, only the Major.Minor version number scheme is recognized. For example, 16.82 needs to be specified to receive any 16.82.xxxxxxxx builds.
+To allow for updates to be discovered and applied, only the Major. Minor version number scheme is recognized. For example, 16.82 needs to be specified to receive any 16.82.xxxxxxxx builds.
 
 Due to differences in version numbers among Microsoft applications, this option needs to be set individually for each app with the following preference settings:
 
