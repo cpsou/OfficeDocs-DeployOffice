@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 10/21/2024
+ms.date: 12/06/2024
 ---
 
 # Connected experiences in Office
@@ -31,6 +31,7 @@ The following table provides a list of connected experiences that analyze your c
 | Analyze Data | [Analyze Data in Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Automatic alt text <sup>[2]</sup> | [Everything you need to know to write effective alt text](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Automatically apply or recommend sensitivity labels <sup>[2]</sup> <sup>[3]</sup> <sup>[4]</sup>|[Sensitivity labels are automatically applied or recommended for your files and emails in Office](https://support.microsoft.com/office/622e0d9c-f38c-470a-bcdb-9e90b24d71a1)|
+|Copilot|When using Copilot in Microsoft 365 apps (Excel, OneNote, Outlook, PowerPoint, and Word)|
 | Data types| [Excel data types: Stocks and geography](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Dictation  | [Dictate in Microsoft 365](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
 |Editor <sup>[4]</sup> <sup>[5]</sup> |[Microsoft Editor checks grammar and more in documents, mail, and the web](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
