@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 12/03/2024
+ms.date: 12/09/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -93,6 +93,9 @@ The [Current Channel profile](https://config.office.com/officeSettings/MPCurrent
 - **Potential update issues** shows potential issues that might require more attention to ensure devices are reporting in and receiving their updates. Failure details aren't available for this profile due to the fast-paced nature of Current Channel.
 
 - **Profile settings** is a separate tab on this page for configuring profile-specific settings, such as the [update deadline](#deadline).
+ 
+> [!NOTE]
+> Cloud update profile is not available for Semi-Annual Enterprise Channel.
 
 ## Profile controls
 
