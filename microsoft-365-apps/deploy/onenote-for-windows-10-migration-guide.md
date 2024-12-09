@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 recommendations: false
 hideEdit: false
 description: "Provides migration guidance for OneNote for Windows 10"
-ms.date: 11/05/2024
+ms.date: 11/09/2024
 ---
 
 # OneNote for Windows 10 migration guidance
@@ -26,9 +26,9 @@ This article provides guidance for migrating your organization from OneNote for 
 To identify users or devices in your organization using OneNote for Windows 10 via Microsoft Intune, follow these steps to run a report:
 
 - In Intune, navigate to: **All Services** > **Apps | Monitor** > **Monitor** > **Discovered apps**, then search for "Office.OneNote."
-- Look for the application version starting with `16001.xxxxx.xxxxx.x` to identify OneNote for Windows 10 users. The latest version is `16001.14326.22008.0`
+- Look for the application version starting with `16001.xxxxx.xxxxx.x` to identify OneNote for Windows 10 users. The latest version is `16001.14326.22094.0`
   > [!NOTE]
-  > The sample migration script works only with OneNote for Windows 10 devices on version `16001.14326.22008.0`
+  > The sample migration script works only with OneNote for Windows 10 devices on version `16001.14326.22094.0`
 
 ## Sample script customization
 
@@ -38,7 +38,7 @@ To ensure a smooth migration to OneNote for Windows, organizations must customiz
 
 - Updates OneNote for Windows 10 to the latest build to incorporate important features and prevent data loss during the migration of unsynced notes.
     > [!NOTE]
-    > This script does not update OneNote for Windows 10 devices that aren't on version 16001.14326.22008. IT admins must upgrade these devices according to their organization's policy.
+    > This script does not update OneNote for Windows 10 devices that aren't on version 16001.14326.22094. IT admins must upgrade these devices according to their organization's policy.
 
 - Terminates all OneNote for Windows 10 processes.
 
@@ -49,7 +49,7 @@ To ensure a smooth migration to OneNote for Windows, organizations must customiz
 - Parse through the `UWPBackUpStatus.json` to validate the backup was successful.
   - Uninstalling with a failed backup can lead to data loss.
     > [!NOTE]
-    > To perform the backup, OneNote for Windows must be installed, and OneNote for Windows 10 must be updated to version 16001.14326.22008 or later.
+    > To perform the backup, OneNote for Windows must be installed, and OneNote for Windows 10 must be updated to version 16001.14326.22094 or later.
 - Uninstalls OneNote for Windows 10.
   - Ensure OneNote for Windows 10 is uninstalled on a user basis and not on a device basis. This process helps mitigate scenarios where shared devices have unsynced notes removed for all accounts.
 
