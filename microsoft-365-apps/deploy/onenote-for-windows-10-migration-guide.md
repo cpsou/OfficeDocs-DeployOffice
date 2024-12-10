@@ -26,7 +26,7 @@ This article provides guidance for migrating your organization from OneNote for 
 To identify users or devices in your organization using OneNote for Windows 10 via Microsoft Intune, follow these steps to run a report:
 
 - In Intune, navigate to: **All Services** > **Apps | Monitor** > **Monitor** > **Discovered apps**, then search for "Office.OneNote."
-- Look for the application version starting with `16001.xxxxx.xxxxx.x` to identify OneNote for Windows 10 users. The latest version is `16001.14326.22094.0`
+- Look for the application version starting with `16001.xxxxx.xxxxx.x`, to identify OneNote for Windows 10 users. The latest version is `16001.14326.22094.0`
   > [!NOTE]
   > The sample migration script works only with OneNote for Windows 10 devices on version `16001.14326.22094.0`
 
