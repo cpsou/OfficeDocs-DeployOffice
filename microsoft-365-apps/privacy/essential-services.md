@@ -18582,10 +18582,9 @@ The following fields are collected:
 
 - **PurchasePlatform** - platform where the user purchased their subscription (iOS vs Windows vs Android).
 
-- **SubscriptionExpirationDateTime** - Date and time when the subscription will expire.
-
 - **SubscriptionDurationType** - Duration of the subscription.
 
+- **SubscriptionExpirationDateTime** - Date and time when the subscription will expire.
 
 ### Office.Android.DocsUI.PaywallControl.AutoRenewUIVisible
 
@@ -18658,7 +18657,7 @@ The following fields are collected:
 
 ### Office.Android.DocsUI.Views.CopilotCreditsFRE 
 
-Critical data to log the user action on Copilot First Run Experience (FRE). The data is used for understanding that Copilot FRE is shown to user, the behavior against the Copilot FRE, and identify if the user has clicked on Get Started CTA or dismissed the Copilot FRE. 
+Critical data to log the user action on Copilot First Run Experience (FRE). The data is used for understanding that the Copilot FRE is shown to the user, the behavior against the Copilot FRE, and identify if the user has clicked on Get Started or dismissed the Copilot FRE. 
 
 The following fields are collected: 
 
@@ -18666,7 +18665,7 @@ The following fields are collected:
 
    0 -> Indicates FRE is displayed to user	 
 
-   1 -> Indicates that user has clicked on “Get Started” to initiate copilot chat 
+   1 -> Indicates that user has clicked on “Get Started” to initiate Copilot chat 
 
    2 -> Indicates that user has not taken any action and dismissed the bottom sheet by either pressing the back button or any other way to dismiss it. 
 
