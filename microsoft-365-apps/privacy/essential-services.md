@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 11/06/2024
+ms.date: 12/12/2024
 ---
 
 # Essential services for Office
@@ -4400,6 +4400,22 @@ The following fields are collected:
 - **ProductId** - String - ProductId of the SKU being purchased.
 
 - **SessionID** - GUID to connect events by session
+
+### Office.Apple.Licensing.CPCPrivacyConsentViewDismissed
+
+This event is triggered when Privacy Consent View is dismissed by the user. The Privacy Consent View is displayed in countries where users' consent is required for showing upsell screens to them. This telemetry will help us understand the actions users take when they encounter this screen.
+
+The following fields are collected:
+
+- **Action** – The action that the user took to dismiss the Privacy Consent screen. It can be either Accept or Decline or none based on user action.
+
+### Office.Apple.Licensing.CPCPrivacyConsentViewVisible
+
+This event is triggered when Privacy Consent View is shown to users. The Privacy Consent View is displayed in countries where users' consent is required for showing upsell screens to them. This telemetry will help us understand if the consent is being shown in such countries.
+
+The following fields are collected:
+
+- None
 
 ### Office.Privacy.UnifiedConsent.API.ConsentGetFailed   
 
@@ -18548,6 +18564,29 @@ The following fields are collected:
 
 - **source** - The origin of an action. For example, initiated from the user, automatically by the client, etc.
 
+### Office.Android.DocsUI.PaywallControl.AutoRenewData
+
+This event is triggered when the user lands on the Subscription Auto Renew Reminder screen. The data is needed to ensure that the experience for auto renew reminder is working as expected and to ensure end to end service reliability.
+
+The following fields are collected:
+
+- **isAROff** - true if user has their auto renew turned off.
+
+- **IsSubscriptionPurchaser** - Boolean indicating whether the user is a subscription purchaser or not (beneficiary).
+
+- **isTrial** - true if user has their trial period ongoing.
+
+- **ProductId** - subscription product ID.
+
+- **PurchaseApp** - app where the user purchased their subscription.
+
+- **PurchasePlatform** - platform where the user purchased their subscription (iOS vs Windows vs Android).
+
+- **SubscriptionExpirationDateTime** - Date and time when the subscription will expire.
+
+- **SubscriptionDurationType** - Duration of the subscription.
+
+
 ### Office.Android.DocsUI.PaywallControl.AutoRenewUIVisible
 
 This event captures critical data to understand if the Save flow (in case of Auto Renewal being off) UI is shown to user or not. On this screen, user can initiate renewal of their subscription and hence it's important to log this data to ensure there are no failures while renewal or restarting a subscription.
@@ -18616,6 +18655,20 @@ The following fields are collected:
 - **SessionId** - Guid: Unique Paywall session identifier
 
 - **V2Enabled** - Boolean – Flag denoting if experimental modern upsell UX was shown.
+
+### Office.Android.DocsUI.Views.CopilotCreditsFRE 
+
+Critical data to log the user action on Copilot First Run Experience (FRE). The data is used for understanding that Copilot FRE is shown to user, the behavior against the Copilot FRE, and identify if the user has clicked on Get Started CTA or dismissed the Copilot FRE. 
+
+The following fields are collected: 
+
+- **User Action** - 0, 1 or 2 where: 
+
+   0 -> Indicates FRE is displayed to user	 
+
+   1 -> Indicates that user has clicked on “Get Started” to initiate copilot chat 
+
+   2 -> Indicates that user has not taken any action and dismissed the bottom sheet by either pressing the back button or any other way to dismiss it. 
 
 ### Office.Apple.Licensing.AutoRenewData
 

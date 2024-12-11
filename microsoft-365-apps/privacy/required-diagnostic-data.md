@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 11/06/2024
+ms.date: 12/11/2024
 ---
 
 # Required diagnostic data for Office
@@ -2121,11 +2121,11 @@ The following fields are collected:
 - **account_calendar_count** - how many calendars the account has
 
 - **account_state** - The current error state of the account
- 
+
 - **action** - type of action performed, for example, create_account, delete_account.
 
 - **auth_framework_type** – type of auth framework used during this session. (for example, ADAL, OneAuth)
- 
+
 - **duration_seconds** - duration of the action
  
 - **entry_point** - entry point of the action, how the user started the action
@@ -2141,12 +2141,14 @@ The following fields are collected:
 - **policy_did_change** - If the Intune policy on the account changed and caused this account action
  
 - **result** - result for the action, for example, success, failure.
-   
+
+- **scope** - the scope of the action; for delete account, this_device or all_devices
+
 - **server_type** - the server type for the account, similar to account_type
  
 - **shared_type** - type of shared account (if the account is shared)
  
-- **scope** - the scope of the action; for delete account, this_device or all_devices
+- **source** - Identifies the initial point when the account action started.
  
 - **total_calendar_accounts** - count of calendar accounts in the app at time of action
  
@@ -17436,6 +17438,8 @@ The following fields are collected:
 
 - **DurationPreloaded** - Duration spent in boot activity as part of preloading.
 
+- **DurationPreloadedAppBootTime** - Boot time of a preloaded app.
+
 - **DurationPreloading** - The duration in microseconds from when the process was created by the operating system to when preloading completes and the app sits and waits for activation by the user.
 
 - **DurationPreloadingActivation** - The duration in microseconds from when the user activates a preloaded app to when the boot activity completes.
@@ -17467,6 +17471,8 @@ The following fields are collected:
 - **InitializationDuration** - The duration in microseconds it took to first initialize the Office process.
 
 - **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
+
+- **IsPreloaded** - Indicates whether session is preloaded.
 
 - **LegacyDuration** - The length of time the activity took to execute, measured using different starting and ending points than Activity.Duration.
 
