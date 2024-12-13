@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
-ms.date: 09/30/2024
+ms.date: 12/13/2024
 
 ---
 
@@ -466,6 +466,7 @@ Allowed values:
 - ID="OneDrive"
 - ID="OneNote"
 - ID="Outlook"
+- ID="OutlookForWindows"
 - ID="PowerPoint"
 - ID="Publisher"
 - ID="Teams"
@@ -473,6 +474,7 @@ Allowed values:
 
 > [!NOTE]
 > - For OneDrive, use **Groove**. For Skype for Business, use **Lync**.
+> - *OutlookForWindows* refers to the new Outlook app. For more information, see [Overview of the new Outlook for Windows](../outlook/overview-new-outlook.md)
 > - For more information about Microsoft Teams, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
 > - "Bing" refers to the background service for Microsoft Search in Bing. For more information, see [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](microsoft-search-bing.md).
 
