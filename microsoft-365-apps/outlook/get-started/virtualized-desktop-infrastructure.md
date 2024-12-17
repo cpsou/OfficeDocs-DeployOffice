@@ -82,23 +82,23 @@ The following minimum versions are necessary to support the new Teams client:
 > [!NOTE]
 > The new Outlook for Windows is installed as part of Windows for Germanium (24H2) and later builds.
 
-See instructions to perform a machine-wide installation in [Deploy new Outlook](https://learn.microsoft.com/en-us/microsoft-365-apps/outlook/get-started/deployment-new-outlook).
+See instructions to perform a machine-wide installation in [Deploy new Outlook](/microsoft-365-apps/outlook/get-started/deployment-new-outlook).
 1.	Download the .exe installer.
 2.	Distribute the installer to your target computers using Intune, Microsoft Endpoint Configuration Manager, Group Policy, or non-Microsoft distribution software.
 3.	Run the installer on each computer.
 
 ## Troubleshooting Outlook for Windows deployment errors
-See [Troubleshoot deployment issues in new Outlook](https://learn.microsoft.com/en-us/microsoft-365-apps/outlook/troubleshoot/troubleshoot-deployment-new-outlook?tabs=windows11)
+See [Troubleshoot deployment issues in new Outlook](/microsoft-365-apps/outlook/troubleshoot/troubleshoot-deployment-new-outlook?tabs=windows11)
 
 > [!NOTE]
-> As mentioned in [Installation issues due to policy restrictions](https://learn.microsoft.com/en-us/microsoft-365-apps/outlook/troubleshoot/troubleshoot-deployment-new-outlook?tabs=windows11#installation-issues-due-to-policy-restrictions),  if **AllowAllTrustedApps** is disabled, the new Outlook app installation fails. This issue has been fixed in the Windows October cumulative update KB5031455 for [Windows 11](https://support.microsoft.com/en-us/topic/october-31-2023-kb5031455-os-builds-22621-2506-and-22631-2506-preview-6513c5ec-c5a2-4aaf-97f5-44c13d29e0d4) and [Windows 10](https://support.microsoft.com/en-us/topic/october-26-2023-kb5031445-os-build-19045-3636-preview-03f350cb-57f9-45e6-bfd7-438895d3c7fa). If this optional October update isn't available for your OS build, the November security update will include the fix.
+> As mentioned in [Installation issues due to policy restrictions](/outlook/troubleshoot/troubleshoot-deployment-new-outlook?tabs=windows11#installation-issues-due-to-policy-restrictions),  if **AllowAllTrustedApps** is disabled, the new Outlook app installation fails. This issue has been fixed in the Windows October cumulative update KB5031455 for [Windows 11](https://support.microsoft.com/topic/october-31-2023-kb5031455-os-builds-22621-2506-and-22631-2506-preview-6513c5ec-c5a2-4aaf-97f5-44c13d29e0d4) and [Windows 10](https://support.microsoft.com/topic/october-26-2023-kb5031445-os-build-19045-3636-preview-03f350cb-57f9-45e6-bfd7-438895d3c7fa). If this optional October update isn't available for your OS build, the November security update will include the fix.
 
 ## Controlling updates for Outlook for Windows
-See [Manage updates in new Outlook for Windows](https://learn.microsoft.com/en-us/microsoft-365-apps/outlook/manage/manage-updates-new-outlook-windows)
+See [Manage updates in new Outlook for Windows](microsoft-365-apps/outlook/manage/manage-updates-new-outlook-windows)
 
 ## Disk Footprint – Key folders and location
 > [!IMPORTANT]
-> If you're using non-persistent VDI, [FSLogix](https://learn.microsoft.com/en-us/fslogix/overview-what-is-fslogix) won't roam the new Outlook for Windows data. The support is planned for late in the first semeter of 2025.
+> If you're using non-persistent VDI, [FSLogix](/fslogix/overview-what-is-fslogix) won't roam the new Outlook for Windows data. The support is planned for late in the first semeter of 2025.
 
 ### Install Location
 
@@ -124,7 +124,7 @@ All user settings and configurations are stored in:
 ## Folder Exclusions for Roaming
 
 > [!IMPORTANT]
-> If you're using non-persistent VDI, [FSLogix](https://learn.microsoft.com/en-us/fslogix/overview-what-is-fslogix) won't roam the new Outlook for Windows data. The support is planned for late in the first semeter of 2025.
+> If you're using non-persistent VDI, [FSLogix](/fslogix/overview-what-is-fslogix) won't roam the new Outlook for Windows data. The support is planned for late in the first semeter of 2025.
 
 ### Recommended for exclusion
 
