@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides an overview of the new Outlook for Windows for VDI"
-ms.date: 12/16/2025
+ms.date: 12/23/2024
 ---
 
 # Upgrade to new Outlook for Windows for Virtualized Desktop Infrastructure (VDI)
@@ -94,7 +94,7 @@ See [Troubleshoot deployment issues in new Outlook](/microsoft-365-apps/outlook/
 > As mentioned in [Installation issues due to policy restrictions](/outlook/troubleshoot/troubleshoot-deployment-new-outlook?tabs=windows11#installation-issues-due-to-policy-restrictions),  if **AllowAllTrustedApps** is disabled, the new Outlook app installation fails. This issue has been fixed in the Windows October cumulative update KB5031455 for [Windows 11](https://support.microsoft.com/topic/october-31-2023-kb5031455-os-builds-22621-2506-and-22631-2506-preview-6513c5ec-c5a2-4aaf-97f5-44c13d29e0d4) and [Windows 10](https://support.microsoft.com/topic/october-26-2023-kb5031445-os-build-19045-3636-preview-03f350cb-57f9-45e6-bfd7-438895d3c7fa). If this optional October update isn't available for your OS build, the November security update will include the fix.
 
 ## Controlling updates for Outlook for Windows
-See [Manage updates in new Outlook for Windows](microsoft-365-apps/outlook/manage/manage-updates-new-outlook-windows)
+See [Manage updates in new Outlook for Windows](https://learn.microsoft.com/microsoft-365-apps/outlook/manage/manage-updates-new-outlook-windows)
 
 ## Disk Footprint – Key folders and location
 > [!IMPORTANT]
