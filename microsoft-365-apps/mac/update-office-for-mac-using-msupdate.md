@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Provides admins with information about how to update Office and other Microsoft applications for Mac from the command line by using msupdate"
-ms.date: 05/24/2024
+ms.date: 12/17/2024
 ---
 
 # Update Microsoft applications for Mac by using msupdate
@@ -85,14 +85,15 @@ The following table lists the Microsoft applications for Mac supported by MAU. T
 | Outlook                              | OPIM2019          |
 | PowerPoint                           | PPT32019          |
 | Quick Assist                         | MSQA01            |
-| Remote Desktop                       | MSRD10            |
 | Remote Help                          | MSRH01            |
 | Skype for Business                   | MSFB16            |
 | Teams 1.0 classic                    | TEAMS10           |
 | Teams 2.1                            | TEAMS21           |
+| Windows App                          | MSRD10            |
 | Word                                 | MSWD2019          |
 
 > [!NOTE]
+> - Remote Desktop has been renamed to **Windows App**. Please update your configuration with the new name to continue receiving updates.
 > - The identifiers for the Office apps, such as Word and Outlook, can be used for the following versions:
 >   - Microsoft 365 for Mac
 >   - Office LTSC for Mac 2024 (volume license)
