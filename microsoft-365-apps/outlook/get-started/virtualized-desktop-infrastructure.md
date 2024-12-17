@@ -98,7 +98,7 @@ See [Manage updates in new Outlook for Windows](/microsoft-365-apps/outlook/mana
 
 ## Disk Footprint – Key folders and location
 > [!IMPORTANT]
-> If you're using non-persistent VDI, [FSLogix](/fslogix/overview-what-is-fslogix) won't roam the new Outlook for Windows data.
+> If you're using non-persistent VDI, [FSLogix](/fslogix/overview-what-is-fslogix) won't roam user data in the new Outlook for Windows.
 
 ### Install Location
 
@@ -124,7 +124,7 @@ All user settings and configurations are stored in:
 ## Folder Exclusions for Roaming
 
 > [!IMPORTANT]
-> If you're using non-persistent VDI, [FSLogix](/fslogix/overview-what-is-fslogix) won't roam the new Outlook for Windows data.
+> If you're using non-persistent VDI, [FSLogix](/fslogix/overview-what-is-fslogix) won't roam user data in the new Outlook for Windows.
 
 ### Recommended for exclusion
 
