@@ -73,7 +73,7 @@ Citrix Virtual Delivery Agent (VDA):
 
 ### VMware Horizon and Workspace ONE requirements
 
-The following minimum versions are necessary to support the new Teams client:
+The following minimum versions are necessary to support the new Outlook for Windows:
 
 - Horizon 8 2111 ESB (8.4)
 
@@ -98,7 +98,7 @@ See [Manage updates in new Outlook for Windows](/microsoft-365-apps/outlook/mana
 
 ## Disk Footprint – Key folders and location
 > [!IMPORTANT]
-> If you're using non-persistent VDI, [FSLogix](/fslogix/overview-what-is-fslogix) won't roam the new Outlook for Windows data. The support is planned for late in the first semeter of 2025.
+> If you're using non-persistent VDI, [FSLogix](/fslogix/overview-what-is-fslogix) won't roam the new Outlook for Windows data.
 
 ### Install Location
 
@@ -124,7 +124,7 @@ All user settings and configurations are stored in:
 ## Folder Exclusions for Roaming
 
 > [!IMPORTANT]
-> If you're using non-persistent VDI, [FSLogix](/fslogix/overview-what-is-fslogix) won't roam the new Outlook for Windows data. The support is planned for late in the first semeter of 2025.
+> If you're using non-persistent VDI, [FSLogix](/fslogix/overview-what-is-fslogix) won't roam the new Outlook for Windows data.
 
 ### Recommended for exclusion
 
