@@ -80,7 +80,7 @@ The following minimum versions are necessary to support the new Outlook for Wind
 ## Deploy the new Outlook for Windows
 
 > [!NOTE]
-> The new Outlook for Windows is installed as part of Windows for Germanium (24H2) and later builds.
+> The new Outlook for Windows is installed as part of Windows, starting with Windows 11, version 24H2.
 
 See instructions to perform a machine-wide installation in [Deploy new Outlook](/microsoft-365-apps/outlook/get-started/deployment-new-outlook).
 1.	Download the .exe installer.
