@@ -22,9 +22,12 @@ This article describes the requirements and limitations of using the new Outlook
 
 ## Requirements
 
+> [!NOTE]
+> New Outlook for Windows is not supported on Windows Server 2016 and Windows Server 2019.
+
 |Requirement |Version|
 |:-----|:-----|
-|Windows|- Windows 10.0.17763.0 (1809) or higher </br>- Windows Server 2019 (10.0.17763) </br>- Windows Server 2022 (20348.2402) or higher</br>- Windows Server 2019 is NOT supported. Plan upgrades.</br>- Windows Server 2016 is NOT supported. Plan upgrades.|
+|Windows|- Windows 10.0.17763.0 (1809) or higher </br>- Windows Server 2022 (20348.2402) or higher|
 |Webview2|Update to the most current version. Learn more: [Enterprise management of WebView2 Runtimes](/microsoft-edge/webview2/concepts/enterprise)|
 |.NET Framework |4.7.2 or higher |
 
