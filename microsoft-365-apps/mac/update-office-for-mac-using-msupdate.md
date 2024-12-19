@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Provides admins with information about how to update Office and other Microsoft applications for Mac from the command line by using msupdate"
-ms.date: 05/24/2024
+ms.date: 12/17/2024
 ---
 
 # Update Microsoft applications for Mac by using msupdate
@@ -22,6 +22,7 @@ Microsoft AutoUpdate (MAU) version 3.18 and later includes the msupdate command-
 msupdate works by using native XPC to communicate with the MAU daemon. On macOS 10.14 Mojave and later, you might see a privacy prompt when running msupdate for the first time. If you're using an enterprise management tool such as Jamf Pro, you should deploy a Privacy Preferences Policy Control (PPPC) payload to preapprove access. Samples of such a payload can be downloaded from [GitHub](https://github.com/pbowden-msft/MobileConfigs/tree/master/Jamf-MSUpdate).
 
 Use the following steps to start using the tool:
+
 1. Open the Terminal application
 2. Enter `cd /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app/Contents/MacOS`
 3. Run `./msupdate --help`
@@ -47,7 +48,7 @@ The following options are displayed:
 ```
 
 > [!NOTE]
-> The ``--version`` option is only supported for the following application updates: **Word**, **Excel**, **PowerPoint**, **Outlook**,**OneNote**
+> The ``--version`` option is only supported for the following application updates: **Word**, **Excel**, **PowerPoint**, **Outlook**, **OneNote**
 
 ## Examples of how to use msupdate
 - Display the current configuration parameters for MAU:
@@ -85,14 +86,15 @@ The following table lists the Microsoft applications for Mac supported by MAU. T
 | Outlook                              | OPIM2019          |
 | PowerPoint                           | PPT32019          |
 | Quick Assist                         | MSQA01            |
-| Remote Desktop                       | MSRD10            |
 | Remote Help                          | MSRH01            |
 | Skype for Business                   | MSFB16            |
 | Teams 1.0 classic                    | TEAMS10           |
 | Teams 2.1                            | TEAMS21           |
+| Windows App                          | MSRD10            |
 | Word                                 | MSWD2019          |
 
 > [!NOTE]
+> - Remote Desktop has been renamed to **Windows App**. Please update your configuration with the new name to continue receiving updates.
 > - The identifiers for the Office apps, such as Word and Outlook, can be used for the following versions:
 >   - Microsoft 365 for Mac
 >   - Office LTSC for Mac 2024 (volume license)
