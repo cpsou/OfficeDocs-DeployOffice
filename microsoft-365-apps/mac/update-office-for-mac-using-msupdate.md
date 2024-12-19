@@ -22,6 +22,7 @@ Microsoft AutoUpdate (MAU) version 3.18 and later includes the msupdate command-
 msupdate works by using native XPC to communicate with the MAU daemon. On macOS 10.14 Mojave and later, you might see a privacy prompt when running msupdate for the first time. If you're using an enterprise management tool such as Jamf Pro, you should deploy a Privacy Preferences Policy Control (PPPC) payload to preapprove access. Samples of such a payload can be downloaded from [GitHub](https://github.com/pbowden-msft/MobileConfigs/tree/master/Jamf-MSUpdate).
 
 Use the following steps to start using the tool:
+
 1. Open the Terminal application
 2. Enter `cd /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app/Contents/MacOS`
 3. Run `./msupdate --help`
@@ -47,7 +48,7 @@ The following options are displayed:
 ```
 
 > [!NOTE]
-> The ``--version`` option is only supported for the following application updates: **Word**, **Excel**, **PowerPoint**, **Outlook**,**OneNote**
+> The ``--version`` option is only supported for the following application updates: **Word**, **Excel**, **PowerPoint**, **Outlook**, **OneNote**
 
 ## Examples of how to use msupdate
 - Display the current configuration parameters for MAU:
