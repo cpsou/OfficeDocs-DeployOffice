@@ -19193,25 +19193,25 @@ The following fields are collected:
 
 This event is triggered when the user initiates Copilot Advance Analysis in Excel, which executes the Python code. The data is used to analyze API performance bottlenecks and detect failures.
 
-**Action** – The activity type of the event.
+- **Action** – The activity type of the event.
 
-**DiagnosticTag** – A unique diagnostic tag of the internal call.
+- **DiagnosticTag** – A unique diagnostic tag of the internal call.
 
-**ExecutionCorrelationId** – The internal call correlation ID.
+- **ExecutionCorrelationId** – The internal call correlation ID.
 
-**ExecutionErrorDetails** – The error details of API failure.
+- **ExecutionErrorDetails** – The error details of API failure.
 
-**ExecutionTimeSpan** – The time span of the API call execution.
+- **ExecutionTimeSpan** – The time span of the API call execution.
 
-**GetJupyterClientTimeSpan** – The time span of an internal call to Jupyter Notebook web application.
+- **GetJupyterClientTimeSpan** – The time span of an internal call to Jupyter Notebook web application.
 
-**HResult** – The result code of API failure.
+- **HResult** – The result code of API failure.
 
-**RequestId** - The request ID of the API call.
+- **RequestId** - The request ID of the API call.
 
-**Result.Type** - The result type of API failure.
+- **Result.Type** - The result type of API failure.
 
-**Tag** – A unique tag if diagnostic tag is not available.
+- **Tag** – A unique tag if diagnostic tag is not available.
 
 
 #### Office.Extensibility.Sandbox.ODPErrorNotification
