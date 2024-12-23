@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 12/12/2024
+ms.date: 01/03/2025
 ---
 
 # Essential services for Office
@@ -4415,7 +4415,7 @@ This event is triggered when Privacy Consent View is shown to users. The Privacy
 
 The following fields are collected:
 
-- None
+- **isFRE** - Boolean value indicating the First Run Experience flow.
 
 ### Office.Privacy.UnifiedConsent.API.ConsentGetFailed   
 
@@ -4990,7 +4990,10 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    The following fields are collected:
 
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+   - **error** - The error code passed by retail federation when a provisioning request failed.
+   - **errorMessage** - The error message passed by retail federation when a provisioning request failed.
    - **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the RFS Provisioning response.
+   - **httpStatusCode** - The http status code passed by retail federation when a provisioning request failed.
    - **MicrosoftPurchaseOrderId** - String - Microsoft Order ID for the purchase.
    - **OriginalTransactionId** - String - Apple Transaction ID for the purchase.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
@@ -5110,7 +5113,11 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    The following fields are collected: 
 
+   - **failureReason** – Indicates the error response given by the App store response.
+   - **productId** –Product ID of the transaction that user tried to restore.
+   - **provisioningAPICalled** – Indicates whether the provisioning API was called for this transaction.
    - **status** - String – To know the response during of this restore process (successful, failed, or unexpected)
+   - **transactionId** –Transaction ID of the transaction that user tried to restore.
 
 
 - **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** - This event is collected when the user taps “See All Benefits” after a successful purchase to see the apps and features included in the purchase. The data is used to measure that the user interface is performing as expected.
