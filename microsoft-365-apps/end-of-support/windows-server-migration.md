@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides guidance to Office admins on moving from Microsoft 365 Apps on Windows Server to either Windows 365 or Azure Virtual Desktop."
-ms.date: 11/04/2024
+ms.date: 12/30/2024
 ---
 # Microsoft 365 Apps migration from Windows Server
 
@@ -62,8 +62,8 @@ For more information about Windows 365 Enterprise, see the following resources:
 Azure Virtual Desktop enables you to:
 
 - Create a full desktop virtualization environment in your Azure subscription without running any gateway servers.
-- Reduce costs and operating system overhead with the new Windows 11 and Windows 10 Enterprise [multi-session capability](/azure/virtual-desktop/windows-10-multisession-faq).
-- Maintain full control over management and deployment, plus options for [VMware](https://azuremarketplace.microsoft.com/marketplace/apps/vmware-inc.hc-azure) integration.
+- Lower costs and reduce operating system overhead using Windows 11 and Windows 10 Enterprise [multi-session capability](/azure/virtual-desktop/windows-multisession-faq).
+- Maintain full control over management and deployment.
 - Use standard gallery images or create custom images.
 - Request assistance from Microsoft on application issues with [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure) at no extra cost.
 - Pay only for what you use on the service (consumption-based pricing).
@@ -72,9 +72,20 @@ For more information, see the following resources:
 
 - [What is Azure Virtual Desktop?](/azure/virtual-desktop/overview)
 - [Prerequisites for Azure Virtual Desktop](/azure/virtual-desktop/prerequisites)
-- [Deploy Azure Virtual Desktop with the getting started feature](/azure/virtual-desktop/getting-started-feature)
+- [Use the quickstart to create a sample infrastructure](/azure/virtual-desktop/quickstart)
 
-If an on-premises session host deployment is required, Azure Virtual Desktop for Azure Stack hyperconverged infrastructure (HCI) lets you deploy Azure Virtual Desktop session hosts to your on-premises Azure Stack HCI infrastructure. This configuration can help address compliance requirements for on-premises data storage. Also, you can improve performance for Azure Virtual Desktop users in areas with poor connectivity to the Azure public cloud. For more information, see [Azure Virtual Desktop for Azure Stack HCI overview (preview)](/azure/virtual-desktop/azure-stack-hci-overview).
+### On-premises session host deployment
+
+> [!IMPORTANT]
+> Azure Stack HCI is now part of Azure Local. Product documentation renaming is in progress. However, older versions of Azure Stack HCI, for example 22H2, will continue to reference Azure Stack HCI and won't reflect the name change. [Learn more](https://aka.ms/azloc-promo).
+
+If an on-premises session host deployment is required, Azure Virtual Desktop on Azure Local allows you to deploy session hosts to your on-premises Azure Local infrastructure. This configuration addresses compliance requirements for on-premises data storage and improves performance for Azure Virtual Desktop users in areas with limited connectivity to the Azure public cloud.
+
+Azure Virtual Desktop service components, including host pools, workspaces, and application groups, remain deployed in Azure. However, session hosts can now be deployed on Azure Local instances. This approach supports scenarios where data locality or enhanced performance is critical.
+
+To deploy Azure Virtual Desktop on Azure Local, your Azure Local instances must be running a minimum of version 23H2 and registered with Azure. Supported operating systems for session hosts include Windows 11 Enterprise multi-session, Windows Server 2022, and other current Windows versions. Licensing and activation must align with Azure Local requirements, and the Azure Connected Machine agent is required for communication with Azure Instance Metadata Service.
+
+For more information, see [Azure Virtual Desktop on Azure Local](/azure/virtual-desktop/azure-local-overview).
 
 ## Additional information
 
