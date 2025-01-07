@@ -23,6 +23,8 @@ items:
             href: deploy-mac-app-store.md
           - name: Deployment options
             href: deployment-options-for-office-for-mac.md
+          - name: Configure shared device mode on iOS and iPadOS
+            href: configure-shared-device-mode.md
 
       - name: Manage updates
         items:

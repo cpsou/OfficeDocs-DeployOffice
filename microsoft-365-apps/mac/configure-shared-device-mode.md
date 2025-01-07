@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Provides information to admins on how to set up and configure shared iOS device mode"
-ms.date: 01/06/2025
+ms.date: 01/08/2025
 ---
 
 # Configure shared device mode for Office on iOS/iPadOS
