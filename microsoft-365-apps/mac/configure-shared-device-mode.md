@@ -66,11 +66,10 @@ Add the groups or devices for testing shared device mode.
 
 2. Add the following key-value pair:
 
-   ```plaintext
-   Configuration key: shareddevicemodeenabled
-   Value type: Boolean
-   Configuration value: true
-``
+   - **Configuration key**: shareddevicemodeenabled
+   - **Value type**: Boolean
+   - **Configuration value**: true
+
 ### Assign policies to groups
 
 1. Select **Next**.
