@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 12/12/2024
+ms.date: 01/08/2025
 ---
 
 # Required diagnostic data for Office
@@ -2133,7 +2133,9 @@ The following fields are collected:
 - **has_hx** - whether the device has an account that is using our new mail syncing service, not necessarily the account that the action was performed upon
  
 - **is_hx** - is the account using our new mail syncing service
- 
+
+- **is_license_only_account** - Indicates whether the account performing the action is a license-only account.
+
 - **is_shared_mailbox** - whether the action pertains to a shared mailbox
  
 - **number_of_accounts** - total number of accounts that the action is performed on
@@ -2155,6 +2157,9 @@ The following fields are collected:
 - **total_email_accounts** - count of email accounts in the app at time of action
  
 - **total_file_accounts** - count of file accounts in the app at time of action
+
+- **total_license_only_accounts** - Number of license-only accounts in the app when the action is performed.
+
 
 #### account.lifecycle
 
@@ -2493,6 +2498,8 @@ The following fields are collected:
 - **Days_Since_Last_Ad_Seen** - Days since last ad seen.
 
 - **Days_Since_Last_Ad_Seen_Excl_Focused** - Days since last ad seen, excluding ad placements in Focused inbox.
+
+- **is_ad_personalization_enabled** - indicates whether personalized ads are enabled.
 
 - **taskId** - TaskId gives us the current instance’s taskId. This will be required in multi-instance environment if user wants to launch same instances (Calendar, Calendar or Mail, Mail) side by side
 
@@ -7329,7 +7336,9 @@ The following fields are collected:
 
 - **Data_Type** - Type of file operation (open, close, or save) 
 
-- **IsMIPProtected** - Boolean indicating whether file is MIP (Microsoft Information Protection) encrypted or not.
+- **isMIPDrmPrototected** - boolean flag indicating Microsoft Information Protection (MIP) file encryption/decryption using Microsoft Digital Rights Management (DRM) solution.
+
+- **IsMIPProtected** - Boolean indicating whether file is Microsoft Information Protection (MIP) encrypted or not.
 
 #### Office.OfficeMobile.PdfViewer.PdfFileOperations (on iOS)
 
@@ -14228,7 +14237,9 @@ Allows us to detect that the user has an Assistive technology tool and its name.
 
 The following fields are collected:
 
-  - **Data\_Data\_Jaws -** indicates if Jaws was running during the session**Data\_Data\_Magic -** indicates if Magic was running during the session
+  - **Data\_Data\_Jaws -** indicates if Jaws was running during the session
+  
+  - **Data\_Data\_Magic -** indicates if Magic was running during the session
 
   - **Data\_Data\_Magnify -** indicates if Magnify was running during the session
 
@@ -14245,6 +14256,40 @@ The following fields are collected:
   - **Data\_Data\_WinEyes -** indicates if WinEyes was running during the session
 
   - **Data\_Data\_ZoomText -** indicates if ZoomText was running during the session
+
+
+#### Office.Accessibility.AccessibilityToolSessionPresenceWin32Activity
+
+This event is triggered at the end of a session and is used to detect what Assistive technology tools (if any) are enabled during a session. This allows us to understand if an Office user is experiencing issues with a specific Assistive Technology tool.
+
+The following fields are collected:
+
+- **Data_Data_Dolphin** - indicates is Dolphin was running during the session
+
+- **Data_Data_Dragon**  indicates if Dragon was running during the session
+
+- **Data_Data_Jaws** - indicates if Jaws was running during the session
+
+- **Data_Data_Magic** - indicates if Magic was running during the session
+
+- **Data_Data_Magnify** - indicates if Magnify was running during the session
+
+- **Data_Data_Narrator** - indicates if Narrator was running during the session
+
+- **Data_Data_NVDA** - indicates if NVDA was running during the session
+
+- **Data_Data_SA** - indicates if SA was running during the session
+
+- **Data_Data_Supernova** - indicates if Supernova was running during the session
+
+- **Data_Data_SuperNovaessSuite** - indicates if SuperNovaAccessSuite was running during the session
+
+- **Data_Data_VoiceAccess** - indicates if VoiceAccess was running during the session
+
+- **Data_Data_WinEyes** - indicates if WinEyes was running during the session
+
+- **Data_Data_ZoomText** - indicates if ZoomText was running during the session
+
 
 #### Office.Apple.DarkMode
 
@@ -14686,6 +14731,36 @@ The following fields are collected:
 - **reason** - The reason why app exited.
 
 - **status** - The status when app exited.
+
+#### android.webview.render.process.gone.v2 
+
+This event is triggered when the WebView instance in Outlook app crashes or is terminated by the system. This event provides WebView crash information and help us investigate the root cause.
+
+The following fields are collected: 
+
+- **base64_image_count** - the number of inline images encoded in base64 format in the current email. This format of image may take significant memory. 
+
+- **content_length** - the length of the current email.  
+
+- **did_crash** - whether the WebView crashed or was terminated by the system. 
+
+- **font_support_version** - the version of the Font Support feature.
+
+- **heap_size_limit** - the maximum size of WebView’s JavaScript heap (in MB), which helps investigate the out of memory issues. 
+
+- **inline_image_count** - the number of inline images in the current email.
+
+- **is_content_model_editor** - whether the new version of the email editor was being used. 
+
+- **is_foreground** - whether the app was in foreground when WebView crashed (or was terminated). 
+
+- **loaded_font_count** - the number of the loaded fonts in the current webview. Loading too many fonts into the WebView may take significant memory.
+
+- **reference_status** - the status of reference message in the current email, such as none, collapsed, expanded, and edited. Loading and editing the long reference message body may take significant memory.
+
+- **scenario** - where the WebView crash occurred, such as reading pane, full compose, quick reply, event details, auto reply, and signature.  
+
+- **webview_count** - the number of WebView instances in the app. 
 
 #### app.startup.reason
 
@@ -17260,7 +17335,9 @@ The following fields are collected:
 
 - **Doc_RenderDurationms** - Time to render a pdf file
 
-- **IsMIPProtected** - Boolean indicating whether file is MIP (Microsoft Information Protection) encrypted or not.
+- **isMIPDrmPrototected** - boolean flag indicating Microsoft Information Protection (MIP) file encryption/decryption using Microsoft Digital Rights Management (DRM) solution.
+
+- **IsMIPProtected** - Boolean indicating whether file is Microsoft Information Protection (MIP) encrypted or not.
 
 - **MIPEnryptionHandlerInitTime** - The field indicating time to initialize the MIP (Microsoft Information Protection) encryption handler.
 
@@ -17438,13 +17515,13 @@ The following fields are collected:
 
 - **DurationPreloaded** - Duration spent in boot activity as part of preloading.
 
-- **DurationPreloadedAppBootTime** - Boot time of a preloaded app.
+- **DurationPrewarmedAppBootTime** - Boot time of a prewarmed app. *[This field was previously named DurationPreloadedAppBootTime.]*
 
-- **DurationPreloading** - The duration in microseconds from when the process was created by the operating system to when preloading completes and the app sits and waits for activation by the user.
+- **DurationPrewarming** - The duration in microseconds from when the process was created by the operating system to when prewarming completes and the app sits and waits for activation by the user. *[This field was previously named DurationPreloading.]*
 
-- **DurationPreloadingActivation** - The duration in microseconds from when the user activates a preloaded app to when the boot activity completes.
+- **DurationPrewarmingActivation** - The duration in microseconds from when the user activates a prewarmed app to when the boot activity completes. *[This field was previously named DurationPreloadingActivation.]*
 
-- **DurationPreloadingWaitLoop** - The duration in microseconds that the app sits waiting for activation by the user after preloading.
+- **DurationPrewarmingWaitLoop** - The duration in microseconds that the app sits waiting for activation by the user after prewarming. *[This field was previously named DurationPreloadingWaitLoop.]*
 
 - **DurationProcessCreationAfterReboot** - Duration elapsed in creating Word process after reboot the machine.
 
@@ -17472,7 +17549,7 @@ The following fields are collected:
 
 - **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
 
-- **IsPreloaded** - Indicates whether session is preloaded.
+- **IsPrewarmed** - Indicates whether session is prewarmed. *[This field was previously named IsPreloaded.]*
 
 - **LegacyDuration** - The length of time the activity took to execute, measured using different starting and ending points than Activity.Duration.
 
@@ -19112,6 +19189,32 @@ The event is triggered when the application makes a network request to retail fe
 The following fields are collected:
 
 - **Result** - An integer enumerator value indicating the error (if any) that occurred during the network request to retail federation services.
+
+
+#### Office.Extensibility.ExternalCodeServiceRichApi.ExecutePythonCode
+
+This event is triggered when the user initiates Copilot Advance Analysis in Excel, which executes the Python code. The data is used to analyze API performance bottlenecks and detect failures.
+
+- **Action** – The activity type of the event.
+
+- **DiagnosticTag** – A unique diagnostic tag of the internal call.
+
+- **ExecutionCorrelationId** – The internal call correlation ID.
+
+- **ExecutionErrorDetails** – The error details of API failure.
+
+- **ExecutionTimeSpan** – The time span of the API call execution.
+
+- **GetJupyterClientTimeSpan** – The time span of an internal call to Jupyter Notebook web application.
+
+- **HResult** – The result code of API failure.
+
+- **RequestId** - The request ID of the API call.
+
+- **Result.Type** - The result type of API failure.
+
+- **Tag** – A unique tag if diagnostic tag is not available.
+
 
 #### Office.Extensibility.Sandbox.ODPErrorNotification
 
