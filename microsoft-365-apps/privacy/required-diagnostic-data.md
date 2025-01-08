@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 01/03/2025
+ms.date: 01/08/2025
 ---
 
 # Required diagnostic data for Office
@@ -14237,7 +14237,9 @@ Allows us to detect that the user has an Assistive technology tool and its name.
 
 The following fields are collected:
 
-  - **Data\_Data\_Jaws -** indicates if Jaws was running during the session**Data\_Data\_Magic -** indicates if Magic was running during the session
+  - **Data\_Data\_Jaws -** indicates if Jaws was running during the session
+  
+  - **Data\_Data\_Magic -** indicates if Magic was running during the session
 
   - **Data\_Data\_Magnify -** indicates if Magnify was running during the session
 
@@ -14262,31 +14264,31 @@ This event is triggered at the end of a session and is used to detect what Assis
 
 The following fields are collected:
 
-- **Data_Dolphin** - indicates is Dolphin was running during the session
+- **Data_Data_Dolphin** - indicates is Dolphin was running during the session
 
-- **Data_Dragon**  indicates if Dragon was running during the session
+- **Data_Data_Dragon**  indicates if Dragon was running during the session
 
-- **Data_Jaws** - indicates if Jaws was running during the session
+- **Data_Data_Jaws** - indicates if Jaws was running during the session
 
-- **Data_Magic** - indicates if Magic was running during the session
+- **Data_Data_Magic** - indicates if Magic was running during the session
 
-- **Data_Magnify** - indicates if Magnify was running during the session
+- **Data_Data_Magnify** - indicates if Magnify was running during the session
 
-- **Data_Narrator** - indicates if Narrator was running during the session
+- **Data_Data_Narrator** - indicates if Narrator was running during the session
 
-- **Data_NVDA** - indicates if NVDA was running during the session
+- **Data_Data_NVDA** - indicates if NVDA was running during the session
 
-- **Data_SA** - indicates if SA was running during the session
+- **Data_Data_SA** - indicates if SA was running during the session
 
-- **Data_Supernova** - indicates if Supernova was running during the session
+- **Data_Data_Supernova** - indicates if Supernova was running during the session
 
-- **Data_SuperNovaessSuite** - indicates if SuperNovaAccessSuite was running during the session
+- **Data_Data_SuperNovaessSuite** - indicates if SuperNovaAccessSuite was running during the session
 
-- **Data_VoiceAccess** - indicates if VoiceAccess was running during the session
+- **Data_Data_VoiceAccess** - indicates if VoiceAccess was running during the session
 
-- **Data_WinEyes** - indicates if WinEyes was running during the session
+- **Data_Data_WinEyes** - indicates if WinEyes was running during the session
 
-- **Data_ZoomText** - indicates if ZoomText was running during the session
+- **Data_Data_ZoomText** - indicates if ZoomText was running during the session
 
 
 #### Office.Apple.DarkMode
