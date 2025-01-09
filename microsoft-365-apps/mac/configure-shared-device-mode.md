@@ -1,5 +1,5 @@
 ---
-title: "Configure shared device mode on iOS/iPadOS"
+title: "Configure Microsoft 365 apps for shared device mode on iOS/iPadOS"
 ms.author: chinmayjain
 author: nicholasswhite
 manager: dougeby
@@ -11,73 +11,34 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Provides information to admins on how to set up and configure shared iOS device mode"
-ms.date: 01/08/2025
+ms.date: 01/09/2025
 ---
 
-# Configure shared device mode on iOS/iPadOS
+# Configure Microsoft 365 apps on iOS for shared device mode
 
-This article provides guidance on setting up shared device mode for Microsoft 365 apps on iOS/iPadOS devices. Shared device mode enables multiple users to securely share the same device while accessing Microsoft 365 apps. The configuration process involves enrolling devices, assigning necessary applications, and applying a configuration policy to enable shared device mode.
+This article provides guidance on setting up shared device mode for Microsoft 365 Apps on iOS/iPadOS devices. Shared device mode enables multiple users to securely share the same device while accessing Microsoft 365 Apps. The configuration process involves enrolling devices, assigning necessary applications, and applying a configuration policy to enable shared device mode.
 
 ### Prerequisites
 
-Before configuring, ensure the following prerequisites are met:
+To configure shared device mode for Microsoft 365 Apps on iOS devices, the device must first be set up in shared device mode. This setup can be completed using [Microsoft Intune](/mem/intune/enrollment/automated-device-enrollment-shared-device-mode) or a supported Mobile Device Management (MDM) solution. 
 
-- Devices are enrolled in Microsoft Intune.
-- Users have valid Microsoft 365 accounts.
-- The Microsoft Authenticator app is assigned to targeted devices.
+For guidance on setting up shared device mode for iOS devices, see [Shared device mode for iOS devices](/entra/msal/objc/shared-devices-ios). Ensure that the shared device mode configuration is complete before proceeding to the steps specific to Microsoft 365 Apps.
 
-Additionally, you must complete the *first five steps* and *prerequisites* outlined in [Set up enrollment for devices in shared device mode](/mem/intune/enrollment/automated-device-enrollment-shared-device-mode). These steps are critical for enabling shared device mode and include:
+### Assign Microsoft 365 apps and configure shared device mode
 
-- Creating an Apple enrollment policy.
-- Setting up a dynamic Microsoft Entra group.
-- Creating an assignment filter.
-- Configuring a single sign-on (SSO) app extension policy.
-- Assigning the Microsoft Authenticator app.
+To enable shared device mode for Microsoft 365 apps on iOS devices, set up the device in shared device mode first. Use Microsoft Intune or a supported MDM solution to complete this configuration.
 
-## Assign Microsoft 365 apps and configure shared device mode
+For guidance on setting up shared device mode, including assigning apps to devices, assigning groups, and configuring general app policies, see [Shared device mode for iOS devices](https://learn.microsoft.com/en-us/entra/msal/objc/shared-devices-ios).
 
-Follow these steps to enable shared device mode for Microsoft 365 apps on iOS/iPadOS devices:
+Once the device is set up, follow these steps to configure Microsoft 365 apps for shared device functionality:
 
-### Assign Microsoft 365 apps to devices
-
-1. Navigate to **Apps > iOS/iPadOS > Add** in the Microsoft Intune portal.
-2. From the **App type** dropdown, select **iOS App Store**, then choose **Select**.
-3. Use the **Search the App Store** link to locate the required Microsoft 365 apps such as Word, Excel, or PowerPoint, then choose **Select**.
-4. Select **Next**.
-
-### Assign to groups
-
-Add the groups or devices for testing shared device mode.
-
-1. Under **Available for enrolled devices**, select the group and choose **Next**.
-2. Select **Create** to finalize app assignments.
-
-### Configure app policies
-
-1. Navigate to **Apps > App Configuration Policies > Add > Managed Device**.
+1. Navigate to **Apps > App Configuration Policies > Add > Managed Device** in your MDM portal.
 2. Provide a name for the configuration policy (for example, "Shared Device Mode Policy").
 3. Under **Platform**, select **iOS/iPadOS**.
-4. Choose **Select app**, choose the associated app, and select **OK**.
-5. Select **Next**.
-
-### Set configuration values
-
-1. In the **Settings** tab, under **Configuration settings format**, select **Use configuration designer**.
-
-2. Add the following key-value pair:
-
-   - **Configuration key**: shareddevicemodeenabled
+4. Select **Select app**, then choose the Microsoft 365 app you want to configure (such as Unified Microsoft 365, Word, Excel, or PowerPoint), and select **OK**.
+5. In the **Settings** tab, under **Configuration settings format**, select **Use configuration designer**.
+6. Add the following key-value pair:
+   - **Configuration key**: `shareddevicemodeenabled`
    - **Value type**: Boolean
-   - **Configuration value**: true
-
-### Assign policies to groups
-
-1. Select **Next**.
-2. Under the **Assignments** tab, include the groups or devices for testing.
-3. Proceed to the **Review + create** tab.
-4. Verify all selections and select **Create** to finalize the configuration.
-
-## Reporting bugs
-
-If you encounter any issues while using Microsoft 365 apps in shared device mode, your feedback helps improve the experience. Use the [bug reporting form](https://forms.office.com/r/Xbqw3PFZHr) to submit feedback.
-
+   - **Configuration value**: `true`
+7. Save and deploy the configuration policy to the devices that require Microsoft 365 apps in shared device mode.
