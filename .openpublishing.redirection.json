@@ -2494,6 +2494,11 @@
       "source_path": "office/ltsc/preview/overview-mac-preview.md",
       "redirect_url": "/office/ltsc/preview/update-from-ltsc-preview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "/security/dlp-policy-reference-new-outlook.md",
+      "redirect_url": "/purview/dlp-policy-reference-new-outlook",
+      "redirect_document_id": false
     }
   ]
 }
