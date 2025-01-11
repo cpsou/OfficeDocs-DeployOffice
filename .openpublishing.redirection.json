@@ -2496,7 +2496,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "security/dlp-policy-reference-new-outlook.md",
+      "source_path": "outlook/security/dlp-policy-reference-new-outlook.md",
       "redirect_url": "/purview/dlp-policy-reference-new-outlook",
       "redirect_document_id": false
     }
