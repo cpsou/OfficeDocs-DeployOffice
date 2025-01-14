@@ -202,9 +202,9 @@ Follow these instructions to use the DocRecrypt tool from the command line. You 
 
 |**Parameter**|**Description**|
 |:-----|:-----|
-| `-p`<new_password>       | *(Optional)* This new password is assigned to the input file or to the output file if you specify an output file name.                                                                                                                                 |
-| `-i`<inputfile_or_folder> | This file or folder contains files that are locked with an unknown password. If you specify a folder, the Office DocRecrypt tool ignores files that aren’t in Office Open XML format.                                                                 |
-| `-o`<outputfile_or_folder> | *(Optional)* This new output file name or folder is for the files you create from the input files. The tool ignores files that aren’t in Office Open XML format.                                                                                 |
+| `-p` <new_password>       | *(Optional)* This new password is assigned to the input file or to the output file if you specify an output file name.                                                                                                                                 |
+| `-i` <inputfile_or_folder> | This file or folder contains files that are locked with an unknown password. If you specify a folder, the Office DocRecrypt tool ignores files that aren’t in Office Open XML format.                                                                 |
+| `-o` <outputfile_or_folder> | *(Optional)* This new output file name or folder is for the files you create from the input files. The tool ignores files that aren’t in Office Open XML format.                                                                                 |
 | `-q`                        | *(Optional)* Runs the Office DocRecrypt tool in quiet mode, usually in a script. Quiet mode doesn’t display a UI and fails if a certificate needs a PIN. If your certificate needs a PIN, don’t use quiet mode.                                      |
    
 For example:
