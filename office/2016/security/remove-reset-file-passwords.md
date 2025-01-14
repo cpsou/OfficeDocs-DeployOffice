@@ -151,7 +151,7 @@ To be able to remove a password from a Word, PowerPoint, or Excel file, you must
 |:-----|:-----|
 |Key Name  <br/> |Unique user-defined name that describes the public key certificate. For example, EscrowCert01, EscrowCert02, and so on.  <br/> |
 |Type  <br/> |STRING  <br/> |
-|Value  <br/> |The hash that is used as the certificate unique identifier, also known as a "thumbprint" in the **Windows Certificate** dialog box. For example, if your certificate thumbprint is 9131517191121d94d143117fc126213c1781d21c, set this value to that number. This hash can include spaces if you want to make it more readable.  <br/> |
+|Value  <br/> |The hash that is used as the certificate unique identifier, also known as a "thumbprint" in the **Windows Certificate** dialog box. For example, if your certificate thumbprint is 9131517191121d94d143117fc126213c1781d21c, set this value to that number.  <br/> |
    
 - When the registry entries are in place, push the certificate to the client computer. The public key certificate should be stored in Windows Certificate Manager (certmgr.msc) in the Certificates - Current User or Logical, Personal store. For details about pushing public key certificates to client computers through Group Policy, see [Distribute Certificates to Client Computers by Using Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd807084(v=ws.10)).
     
