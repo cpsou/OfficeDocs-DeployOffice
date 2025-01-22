@@ -92,7 +92,7 @@ These metrics are individually calculated for each of the following apps from th
 - Outlook (classic)
 - OneNote
 
-These metrics are calculated individually per device and form the pre-update baseline for the given device. For example, if there are 10 devices on the first deployment wave and each device runs Microsoft 365 Apps, 10 metrics are calculated per device, 100 in total.
+These metrics are calculated individually per device and establish the pre-update baseline for the given device. For example, if there are 10 devices on the first deployment wave and each device runs Microsoft 365 Apps, 10 metrics are calculated per device, 100 in total.
 
 ### Post-update health baseline
 Once a device has updated to the newest version and sends diagnostic data, update validation starts to compute the post-update baseline. Once data from seven days after the update release has been processed and a statistical confidence level of at least 95% has been reached, results are sent to the next stage.
@@ -103,7 +103,7 @@ This stage involves comparing the baselines and individual metrics for each devi
 - Performance is above 5 seconds and at least 1 second slower than before.
 - Reliability is below 99% and at least 1 percentage point lower than before.
 
-The thresholds help to filter out degradations that are are not disruptive to users and would create unneccesary noise. For example, imagine Outlook's app start performance slows down from two seconds to three seconds. This is a 50% degradation, but it has not much impact on the user. Outlook still starts up fairly quickly and might not disrupt the user's daily routine.
+The thresholds help to filter out degradations that aren't disruptive to users and would create unnecessary noise. For example, imagine Outlook's app start performance slows down from two seconds to three seconds. This is a 50% degradation, but it has not much impact on the user. Outlook still starts up fairly quickly and might not disrupt the user's daily routine.
 
 Any degradation that exceeds the thresholds is then assigned a score:
 
