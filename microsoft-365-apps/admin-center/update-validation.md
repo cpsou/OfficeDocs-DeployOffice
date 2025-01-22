@@ -89,7 +89,7 @@ These metrics are individually calculated for each of the following apps from th
 - Word
 - Excel
 - PowerPoint
-- Outlook
+- Outlook (classic)
 - OneNote
 
 These metrics are calculated individually per device and form the pre-update baseline for the given device. For example, if there are 10 devices on the first deployment wave and each device runs Microsoft 365 Apps, 10 metrics are calculated per device, 100 in total.
