@@ -44,6 +44,8 @@ The following list shows the preferences that are covered in this article:
 - [Allow S/MIME certificates without a matching email address](#allow-smime-certificates-without-a-matching-email-address)
 - [Automatically configure Microsoft 365 mailbox on first launch](#automatically-configure-microsoft-365-mailbox-on-first-launch)
 - [Block access to mailboxes from unauthorized domains](#block-access-to-mailboxes-from-unauthorized-domains)
+- [Block access to mailbox if there is a security certificate error](#block-access-to-mailbox-if-there-is-a-security-certificate-error)
+- [Block access to mailbox if user is trying to use basic authentication](#block-access-to-mailbox-if-user-is-trying-to-use-basic-authentication)
 - [Disable automatic updating of weather location](#disable-automatic-updating-of-weather-location)
 - [Disable calendar sharing permissions](#disable-calendar-sharing-permissions)
 - [Disable Copy or Move emails between accounts](#disable-copy-or-move-emails-between-accounts)
@@ -326,6 +328,34 @@ Prevent users from applying S/MIME option to email messages.
 |Requires Configuration Profile| No |
 |Availability|16.57 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
+### Block access to mailbox if there is a security certificate error
+
+Prevent users from connecting to mailbox if there is a security certificate error.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key|FailAllCertificateErrors|
+|Data Type|Boolean  |
+|Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
+|Availability|16.94 |
+|Comments|This key suppresses all certificate alerts and block connections if there is a security certificate error. |
+
+### Block access to mailbox if user is trying to use basic authentication
+
+Prevent users from connecting to mailbox if basic authentication is used.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key|DisableBasic|
+|Data Type|Boolean  |
+|Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
+|Availability|16.93 |
+|Comments| This key disables basic authentication for Exchange accounts in Outlook. |
 
 ### Trust AutoDiscover redirects
 
