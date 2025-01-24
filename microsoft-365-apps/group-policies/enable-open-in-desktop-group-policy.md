@@ -15,13 +15,20 @@ ms.date: 01/24/2025
 
 # Enabling Open in Desktop Setting by Group Policy
 
-The Open in Desktop Group Policy setting allows tenant admins to configure Word, Excel, and PowerPoint file links hosted in OneDrive and SharePoint to open in desktop applications by default. This setting applies only to Windows users. It's particularly useful for tenants with compliance, policy, or usability requirements that necessitate opening files in desktop applications.
+The Open in Desktop Group Policy setting allows tenant admins to configure Word, Excel, and PowerPoint file links hosted in OneDrive and SharePoint to open in desktop applications by default. This setting applies only to Windows users. It's useful for tenants with compliance, policy, or usability requirements that necessitate opening files in desktop applications.
 
 ## User and policy interaction
 
-When you enable this policy, file links in OneDrive and SharePoint open in desktop apps, such as Word, Excel, PowerPoint, and Outlook. The policy ensures that users automatically access files in the desktop environment.
+When you enable this policy setting, file links from Word, Excel, and PowerPoint opened from classic Outlook, Word, Excel, or PowerPoint windows apps open in their respective desktop app. This setting ensures that users can access files in the desktop app environment by default.
 
 To maintain control over their default file-opening behavior, users can set a different file-opening preference. This preference overrides the Group Policy that the tenant admin sets, even when the policy is in effect.
+
+## Policy scope
+
+This group policy setting applies to file links opened from Word, Excel, and PowerPoint.
+
+> <!NOTE>
+> The setting that this group policy controls is independent of the SharePoint site admin setting to open files in the Microsoft 365 desktop app. The SharePoint site admin setting is only effective for files opened from the SharePoint or One Drive web page.
 
 ## Policy behavior
 
