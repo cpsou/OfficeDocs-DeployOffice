@@ -10,33 +10,18 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "This article describes how tenant admins can enable the Open in Desktop feature using Group Policy."
-ms.date: 01/23/2024
+ms.date: 01/24/2025
 ---
 
 # Enabling Open in Desktop Setting by Group Policy
 
-This article describes how tenant admins can enable the Open in Desktop feature using Group Policy.
-
-## Overview
-
-The Open in Desktop Group Policy setting allows tenant admins to configure file links hosted in OneDrive and SharePoint (ODSP) to open in desktop applications by default. This setting is useful for tenants with compliance, policy, or usability requirements that necessitate opening files in desktop applications.
-
-## Scope of the setting
-
-The Open in Desktop Group Policy applies to file links hosted in ODSP and opened from Word, Excel, PowerPoint, and classic Outlook.
-
-> [!NOTE]
-> Support for opening files from Microsoft Teams is expected to be available in <month>.
+The Open in Desktop Group Policy setting applies only to Windows users. It allows tenant admins to configure Word, Excel, and PowerPoint file links hosted in OneDrive and SharePoint to open in desktop applications by default. This setting is particularly useful for tenants with compliance, policy, or usability requirements that necessitate opening files in desktop applications.
 
 ## User and policy interaction
 
-When you enable this policy, file links in ODSP open in desktop apps, such as Word, Excel, PowerPoint, and Outlook. The policy ensures that users automatically access files in the desktop environment.
+When you enable this policy, file links in OneDrive and SharePoint open in desktop apps, such as Word, Excel, PowerPoint, and Outlook. The policy ensures that users automatically access files in the desktop environment.
 
 To maintain control over their default file-opening behavior, users can set a different file-opening preference. This preference overrides the Group Policy that the tenant admin sets, even when the policy is in effect.
-
-### SharePoint site admin policy interaction
-
-This Group Policy setting applies to file links accessed from Word, Excel, PowerPoint, and Outlook apps. The SharePoint site admin policy is limited to file links accessed directly from the SharePoint site web page. To ensure that file links open in desktop apps, tenant admins must enable this Group Policy.
 
 ## Policy behavior
 
