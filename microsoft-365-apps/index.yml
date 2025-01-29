@@ -169,7 +169,7 @@ conceptualContent:
 # Additional Content
 additionalContent:
   sections:
-    - title: Help and Support
+    - title: Support and other resources
       items:
         - title: Community Support on Microsoft Q&A
           summary: Get advice and answers from community experts.
@@ -180,9 +180,6 @@ additionalContent:
         - title: End user help and learning
           summary: Help and training for end users using Microsoft 365 Apps.
           url: https://support.microsoft.com/microsoft-365
-
-    - title: Troubleshooting and Resources
-      items:
         - title: Troubleshooting Microsoft 365 Apps
           summary: Find solutions for common Microsoft 365 Apps issues.
           url: /office/troubleshoot/office-client-welcome
