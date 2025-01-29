@@ -60,54 +60,45 @@ productDirectory:
 
 # Conceptual Content
 conceptualContent:
-  sections:
+  items:
     - title: Deployment
-      summary: Explore various deployment options, including cloud, local, and Configuration Manager.
-      items:
-        - title: Deploy Microsoft 365 Apps from the cloud
-          links:
-            - url: /deploy/deploy-microsoft-365-apps-cloud.md
-              itemType: deploy
-              text: Deploy from the cloud
-            - url: /deploy/deploy-microsoft-365-apps-local-source.md
-              itemType: deploy
-              text: Deploy from a local source
-            - url: /deploy/deploy-microsoft-365-apps-configuration-manager.md
-              itemType: deploy
-              text: Deploy with Configuration Manager
-            - url: /deploy/deploy-microsoft-365-apps-remote-desktop-services.md
-              itemType: deploy
-              text: Deploy with Remote Desktop Services
+      links:
+        - text: Deploy Microsoft 365 Apps from the cloud
+          url: /deploy/deploy-microsoft-365-apps-cloud.md
+          itemType: deploy
+        - text: Deploy Microsoft 365 Apps from a local source
+          url: /deploy/deploy-microsoft-365-apps-local-source.md
+          itemType: deploy
+        - text: Deploy with Configuration Manager
+          url: /deploy/deploy-microsoft-365-apps-configuration-manager.md
+          itemType: deploy
+        - text: Deploy with Remote Desktop Services
+          url: /deploy/deploy-microsoft-365-apps-remote-desktop-services.md
+          itemType: deploy
 
     - title: Managing updates
-      summary: Learn how to manage update channels and control update rollout.
-      items:
-        - title: Overview of update channels
-          links:
-            - url: /updates/overview-update-channels.md
-              itemType: overview
-              text: Learn about update channels
-            - url: /updates/change-update-channels.md
-              itemType: how-to-guide
-              text: Change the update channel
-            - url: /updates/manage-microsoft-365-apps-updates-configuration-manager.md
-              itemType: how-to-guide
-              text: Manage updates with Configuration Manager
+      links:
+        - text: Overview of update channels
+          url: /updates/overview-update-channels.md
+          itemType: overview
+        - text: Change the update channel
+          url: /updates/change-update-channels.md
+          itemType: how-to-guide
+        - text: Manage updates with Configuration Manager
+          url: /updates/manage-microsoft-365-apps-updates-configuration-manager.md
+          itemType: how-to-guide
 
     - title: Licensing and activation
-      summary: Learn about Microsoft 365 Apps licensing and activation options.
-      items:
-        - title: Licensing options overview
-          links:
-            - url: /licensing-activation/overview-licensing-activation-microsoft-365-apps.md
-              itemType: overview
-              text: Understand licensing and activation
-            - url: /licensing-activation/overview-shared-computer-activation.md
-              itemType: how-to-guide
-              text: Shared computer activation
-            - url: /licensing-activation/troubleshoot-shared-computer-activation.md
-              itemType: learn
-              text: Troubleshoot activation issues
+      links:
+        - text: Overview of licensing and activation
+          url: /licensing-activation/overview-licensing-activation-microsoft-365-apps.md
+          itemType: overview
+        - text: Shared computer activation
+          url: /licensing-activation/overview-shared-computer-activation.md
+          itemType: how-to-guide
+        - text: Troubleshoot activation issues
+          url: /licensing-activation/troubleshoot-shared-computer-activation.md
+          itemType: learn
 
 # Tools
 tools:
