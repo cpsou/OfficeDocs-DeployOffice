@@ -23,10 +23,6 @@ highlightedContent:
       itemType: deploy
       url: deploy/deployment-guide-microsoft-365-apps.md
 
-    - title: Overview of update channels
-      itemType: overview
-      url: updates/overview-update-channels.md
-
     - title: Licensing and activation overview
       itemType: reference
       url: licensing-activation/overview-licensing-activation-microsoft-365-apps.md
@@ -35,9 +31,13 @@ highlightedContent:
       itemType: get-started
       url: https://learn.microsoft.com/en-us/microsoft-365-apps/insider
 
-    - title: Microsoft 365 Apps Deployment Insiders
-      itemType: video
-      url: https://www.youtube.com/@OfficeDeploymentInsiders
+    - title: Microsoft 365 Apps Privacy Controls
+      itemType: reference
+      url: privacy/overview-privacy-controls.md
+
+    - title: Overview of the Microsoft 365 Apps admin center
+      itemType: overview
+      url: admin-center/overview.md
 
 productDirectory:
   title: Get started
@@ -47,19 +47,19 @@ productDirectory:
       imageSrc: /office/media/icons/search-blue.svg
       links:
         - url: deploy/assess-microsoft-365-apps.md
-          text: Learn more
+          text: Review deployment requirements
 
     - title: Plan your deployment strategy
       imageSrc: /office/media/icons/deploy-blue.svg
       links:
         - url: deploy/plan-microsoft-365-apps.md
-          text: Learn more
+          text: Explore deployment strategy
 
     - title: Microsoft FastTrack
       imageSrc: /office/media/icons/get-started-blue.svg
       links:
         - url: https://www.microsoft.com/fasttrack
-          text: Learn more
+          text: Get FastTrack deployment assistance
 
 # Conceptual Content (Deployment, Updates, Licensing)
 conceptualContent:
@@ -75,9 +75,12 @@ conceptualContent:
         - text: Deploy with Configuration Manager
           url: deploy/deploy-microsoft-365-apps-configuration-manager.md
           itemType: deploy
-        - text: Deploy with Remote Desktop Services
-          url: deploy/deploy-microsoft-365-apps-remote-desktop-services.md
-          itemType: deploy
+        - text: Overview of cloud update in the Microsoft 365 Apps admin center
+          url: admin-center/cloud-update.md
+          itemType: overview
+        - text: Customize deployments with the Office Customization Tool
+          url: admin-center/overview-office-customization-tool.md
+          itemType: overview
 
     - title: Managing updates
       links:
@@ -90,6 +93,12 @@ conceptualContent:
         - text: Manage updates with Configuration Manager
           url: updates/manage-microsoft-365-apps-updates-configuration-manager.md
           itemType: how-to-guide
+        - text: Validate updates before deployment
+          url: admin-center/update-validation.md
+          itemType: reference
+        - text: Track security update status
+          url: admin-center/security-update-status.md
+          itemType: reference
 
     - title: Licensing and activation
       links:
@@ -102,6 +111,9 @@ conceptualContent:
         - text: Troubleshoot activation issues
           url: licensing-activation/troubleshoot-shared-computer-activation.md
           itemType: learn
+        - text: Monitor app health and inventory
+          url: admin-center/microsoft-365-apps-health.md
+          itemType: reference
 
     - title: Security and compliance
       links:
@@ -129,18 +141,30 @@ conceptualContent:
         - text: Troubleshooting Outlook issues
           url: outlook/troubleshoot/troubleshoot-overview-new-outlook.md
           itemType: learn
+        - text: Licensing options for Outlook
+          url: outlook/get-started/licensing-options.md
+          itemType: reference
+        - text: Migration planning for the new Outlook
+          url: outlook/get-started/migration-planning.md
+          itemType: how-to-guide 
 
     - title: Office for Mac
       links:
-        - text: Overview of activation for Office for Mac
-          url: mac/overview-of-activation-for-office-for-mac.md
-          itemType: overview
         - text: Deployment guide for Office for Mac
           url: mac/deployment-guide-for-office-for-mac.md
           itemType: deploy
+        - text: Deploy Office for Mac via the Mac App Store
+          url: mac/deploy-mac-app-store.md
+          itemType: deploy
+        - text: Overview of activation for Office for Mac
+          url: mac/overview-of-activation-for-office-for-mac.md
+          itemType: overview
         - text: Managing updates for Office for Mac
           url: mac/deploy-updates-for-office-for-mac.md
           itemType: how-to-guide
+        - text: Troubleshoot activation issues for Office for Mac
+          url: mac/licensing-helper-tool.md
+          itemType: learn
 
 # Additional Content
 additionalContent:
