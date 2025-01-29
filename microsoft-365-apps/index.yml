@@ -17,7 +17,7 @@ highlightedContent:
   items:
     - title: What's new in Microsoft 365 Apps
       itemType: whats-new
-      url: whats-new.md
+      url: deploy/whats-new.md
 
     - title: Overview of deployment options
       itemType: deploy
@@ -35,24 +35,24 @@ highlightedContent:
       itemType: get-started
       url: https://learn.microsoft.com/en-us/microsoft-365-apps/insider
 
-# Product Directory
 productDirectory:
-
+  title: Get started
+  summary: Learn how to prepare and plan for Microsoft 365 Apps deployment.
   items:
     - title: Assess your environment and requirements
-      imageSrc: /office/media/icons/search-blue.svg
+      imageSrc: /office/media/icons/search-blue.png
       links:
         - url: deploy/assess-microsoft-365-apps.md
           text: Learn more
 
     - title: Plan your deployment strategy
-      imageSrc: /office/media/icons/planning-blue.svg
+      imageSrc: /office/media/icons/deploy-blue.png
       links:
         - url: deploy/plan-microsoft-365-apps.md
           text: Learn more
 
     - title: Microsoft FastTrack
-      imageSrc: /office/media/icons/fasttrack-blue.svg
+      imageSrc: /office/media/icons/get-started-blue.png
       links:
         - url: https://www.microsoft.com/fasttrack
           text: Learn more
