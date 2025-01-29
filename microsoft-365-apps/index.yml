@@ -1,10 +1,8 @@
 ### YamlMime:Hub
-
 #root section (Required)
 title: Microsoft 365 Apps deployment documentation # < 60 chars
 summary: Resources for IT professionals and admins on how to deploy and manage Microsoft 365 Apps. # < 400 chars
 brand: m365
-
 metadata:
   title: Microsoft 365 Apps deployment documentation
   description: Learn how to deploy and manage Microsoft 365 Apps.
@@ -13,123 +11,173 @@ metadata:
   author: nicholasswhite
   ms.author: nwhite
   ms.date: 01/27/2025
-# highlightedContent section (Optional; Remove if not applicable.)
-# Maximum of 8 items
+
+# Highlighted Content
 highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
-   items:
-    # Card
-    - title: What's new for deploying Microsoft 365 Apps
+  items:
+    - title: What's new in Microsoft 365 Apps
       itemType: whats-new
-      url: whats-new.md
+      url: /whats-new.md
 
-    - title: Overview of Cloud Policy
+    - title: Overview of deployment options
       itemType: overview
-      url: admin-center/overview-cloud-policy.md
+      url: /deploy/deployment-guide-microsoft-365-apps.md
 
-    - title: Overview of the Office Customization Tool
+    - title: Overview of update channels
       itemType: overview
-      url: /admin-center/overview-office-customization-tool.md
+      url: /updates/overview-update-channels.md
 
-    - title: YouTube – Microsoft 365 Apps Deployment Insiders
-      itemType: video
-      url: https://www.youtube.com/@OfficeDeploymentInsiders
+    - title: Microsoft 365 Apps health and inventory
+      itemType: overview
+      url: /admin-center/microsoft-365-apps-health.md
 
-# productDirectory section (Optional; Remove if not applicable.)
+    - title: Licensing and activation overview
+      itemType: reference
+      url: /licensing-activation/overview-licensing-activation-microsoft-365-apps.md
+
+# Product Directory
 productDirectory:
   title: Get started
-  summary: Explore essential resources to help plan, prepare, and kick off your Microsoft 365 Apps deployment.
+  summary: Learn how to prepare and plan for Microsoft 365 Apps deployment.
   items:
-    # Card
     - title: Assess your environment and requirements
       imageSrc: /office/media/icons/search-blue.svg
       links:
         - url: /deploy/assess-microsoft-365-apps.md
           text: Learn more
-    # Card
-    - title: Plan your enterprise deployment
+
+    - title: Plan your deployment strategy
       imageSrc: /office/media/icons/planning-blue.svg
       links:
         - url: /deploy/plan-microsoft-365-apps.md
           text: Learn more
-    # Card
-    - title: Remove existing MSI versions of Office
-      imageSrc: /office/media/icons/upgrade-blue.svg
-      links:
-        - url: /deploy/upgrade-from-msi-version.md
-          text: Learn more
-    # Card
+
     - title: Microsoft FastTrack
       imageSrc: /office/media/icons/fasttrack-blue.svg
       links:
         - url: https://www.microsoft.com/fasttrack
           text: Learn more
 
-# additionalContent section (Optional; Remove if not applicable.)
-# "Card with summary style"
-additionalContent:
-  # Supports up to 4 subsections
+# Conceptual Content
+conceptualContent:
   sections:
-    - title: Deploy
-      summary: Learn about your deployment options, including from the cloud, a local source, and with Microsoft Configuration Manager.
+    - title: Deployment
+      summary: Explore various deployment options, including cloud, local, and Configuration Manager.
       items:
-        # Card
         - title: Deploy Microsoft 365 Apps from the cloud
-          summary: Streamline your deployment by installing Microsoft 365 Apps directly from the internet.
-          url: /deploy/deploy-microsoft-365-apps-cloud.md
-        # Card
-        - title: Deploy Microsoft 365 Apps from a local source
-          summary: Save bandwidth by deploying from a local source you control.
-          url: /deploy/deploy-microsoft-365-apps-local-source.md
-        # Card
-        - title: Deploy with Configuration Manager (current branch)
-          summary: Use Microsoft Configuration Manager to deploy Microsoft 365 Apps across your environment.
-          url: /deploy/deploy-microsoft-365-apps-configuration-manager.md
+          links:
+            - url: /deploy/deploy-microsoft-365-apps-cloud.md
+              itemType: deploy
+              text: Deploy from the cloud
+            - url: /deploy/deploy-microsoft-365-apps-local-source.md
+              itemType: deploy
+              text: Deploy from a local source
+            - url: /deploy/deploy-microsoft-365-apps-configuration-manager.md
+              itemType: deploy
+              text: Deploy with Configuration Manager
+            - url: /deploy/deploy-microsoft-365-apps-remote-desktop-services.md
+              itemType: deploy
+              text: Deploy with Remote Desktop Services
 
-    - title: Manage updates
-      summary: Explore the different update channels and how to manage Microsoft 365 Apps updates in your organization.
+    - title: Managing updates
+      summary: Learn how to manage update channels and control update rollout.
       items:
-        # Card
-        - title: Overview of update channels for Microsoft 365 Apps
-          summary: Learn about the various update channels and pick the best one for your environment.
-          url: /updates/overview-update-channels.md
-        # Card
-        - title: Manage updates with Configuration Manager
-          summary: Use Configuration Manager to simplify and automate your update process.
-          url: /updates/manage-microsoft-365-apps-updates-configuration-manager.md
-        # Card
-        - title: Change the update channel
-          summary: Switch devices to different update channels to meet organizational needs.
-          url: /updates/change-update-channels.md
-        # Card
-        - title: Release information for updates
-          summary: Stay informed on all new releases for Microsoft 365 Apps.
-          url: /officeupdates/release-notes-microsoft365-apps
+        - title: Overview of update channels
+          links:
+            - url: /updates/overview-update-channels.md
+              itemType: overview
+              text: Learn about update channels
+            - url: /updates/change-update-channels.md
+              itemType: how-to-guide
+              text: Change the update channel
+            - url: /updates/manage-microsoft-365-apps-updates-configuration-manager.md
+              itemType: how-to-guide
+              text: Manage updates with Configuration Manager
 
-    - title: Reference
-      summary: Get details on tools, languages, Remote Desktop Services, and activation for Microsoft 365 Apps.
+    - title: Licensing and activation
+      summary: Learn about Microsoft 365 Apps licensing and activation options.
       items:
-        # Card
-        - title: Overview of the Office Deployment Tool
-          summary: Use the Office Deployment Tool (ODT) to customize and install Microsoft 365 Apps.
-          url: /deploy/overview-office-deployment-tool.md
-        # Card
-        - title: Configuration options for the Office Deployment Tool
-          summary: Learn about the XML elements that specify installation preferences.
-          url: /deploy/office-deployment-tool-configuration-options.md
-        # Card
-        - title: Overview of deploying languages for Microsoft 365 Apps
-          summary: Discover how to plan and deploy additional languages for Microsoft 365 Apps.
-          url: /deploy/overview-deploying-languages-microsoft-365-apps.md
-        # Card
-        - title: Deploy Microsoft 365 Apps with Remote Desktop Services
-          summary: Make Microsoft 365 Apps available to your users in an RDS environment.
-          url: /deploy/deploy-microsoft-365-apps-remote-desktop-services.md
-        # Card
-        - title: Overview of licensing and activation in Microsoft 365 Apps
-          summary: Learn how to license and activate Microsoft 365 Apps in your organization.
-          url: /licensing-activation/overview-licensing-activation-microsoft-365-apps.md
-        # Card
-        - title: Overview of shared computer activation
-          summary: Understand how shared computer activation works for Microsoft 365 Apps.
-          url: /licensing-activation/overview-shared-computer-activation.md
+        - title: Licensing options overview
+          links:
+            - url: /licensing-activation/overview-licensing-activation-microsoft-365-apps.md
+              itemType: overview
+              text: Understand licensing and activation
+            - url: /licensing-activation/overview-shared-computer-activation.md
+              itemType: how-to-guide
+              text: Shared computer activation
+            - url: /licensing-activation/troubleshoot-shared-computer-activation.md
+              itemType: learn
+              text: Troubleshoot activation issues
+
+# Tools
+tools:
+  title: Key deployment and management tools
+  summary: Explore essential tools for deploying and managing Microsoft 365 Apps.
+  items:
+    - title: Office Deployment Tool
+      imageSrc: /office/media/icons/deployment-tool.svg
+      url: /deploy/overview-office-deployment-tool.md
+    - title: Group Policy settings
+      imageSrc: /office/media/icons/group-policy.svg
+      url: /insider/deploy/group-policy.md
+    - title: Intune for policy management
+      imageSrc: /office/media/icons/intune.svg
+      url: /insider/deploy/intune.md
+
+# Additional Content
+additionalContent:
+  sections:
+    - title: Security and compliance
+      summary: Ensure Microsoft 365 Apps security with recommended best practices.
+      items:
+        - title: Overview of security baselines
+          summary: Security baselines and best practices for Microsoft 365 Apps.
+          url: /security/security-baseline.md
+        - title: Block VBA macros from the internet
+          summary: Improve security by blocking untrusted macros.
+          url: /security/internet-macros-blocked.md
+        - title: Configure trusted locations
+          summary: Manage security settings to control trusted file locations.
+          url: /security/trusted-locations.md
+        - title: Compliance and data protection
+          summary: Ensure compliance with Microsoft 365 Apps security policies.
+          url: /security/compliance-overview.md
+
+    - title: Outlook
+      summary: Learn about deployment, management, and troubleshooting for Outlook in Microsoft 365 Apps.
+      items:
+        - title: Overview of the new Outlook
+          summary: Learn about changes and features in the new Outlook experience.
+          url: /outlook/overview-new-outlook.md
+        - title: Managing updates for Outlook
+          summary: Keep Outlook updated and manage rollouts effectively.
+          url: /outlook/manage/manage-updates-new-outlook-windows.md
+        - title: Troubleshooting Outlook issues
+          summary: Find solutions for common Outlook issues.
+          url: /outlook/troubleshoot/troubleshoot-overview-new-outlook.md
+
+    - title: Office for Mac
+      summary: Resources for deploying, updating, and licensing Office for Mac.
+      items:
+        - title: Overview of activation for Office for Mac
+          summary: Learn how to activate Office for Mac in your organization.
+          url: /mac/overview-of-activation-for-office-for-mac.md
+        - title: Deployment guide for Office for Mac
+          summary: Step-by-step guide to deploying Office for Mac.
+          url: /mac/deployment-guide-for-office-for-mac.md
+        - title: Managing updates for Office for Mac
+          summary: Learn how to update Office for Mac effectively.
+          url: /mac/deploy-updates-for-office-for-mac.md
+
+    - title: Additional resources
+      summary: Explore more resources for Microsoft 365 Apps administration and end-user support.
+      items:
+        - title: End user help and learning
+          summary: Help and training for end users using Microsoft 365 Apps.
+          url: https://support.microsoft.com/microsoft-365
+        - title: Troubleshooting Microsoft 365 Apps
+          summary: Find solutions for common Microsoft 365 Apps issues.
+          url: https://learn.microsoft.com/en-us/office/troubleshoot/office-client-welcome
+        - title: Microsoft 365 Insider Program for Business
+          summary: Get early access to new features in Microsoft 365 Apps.
+          url: https://learn.microsoft.com/en-us/microsoft-365-apps/insider
