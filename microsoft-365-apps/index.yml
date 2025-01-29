@@ -35,6 +35,10 @@ highlightedContent:
       itemType: get-started
       url: https://learn.microsoft.com/en-us/microsoft-365-apps/insider
 
+    - title: Microsoft 365 Apps Deployment Insiders
+      itemType: video
+      url: https://www.youtube.com/@OfficeDeploymentInsiders
+
 productDirectory:
   title: Get started
   summary: Learn how to prepare and plan for Microsoft 365 Apps deployment.
