@@ -20,7 +20,7 @@ highlightedContent:
       url: whats-new.md
 
     - title: Overview of deployment options
-      itemType: overview
+      itemType: deploy
       url: deploy/deployment-guide-microsoft-365-apps.md
 
     - title: Overview of update channels
@@ -32,7 +32,7 @@ highlightedContent:
       url: licensing-activation/overview-licensing-activation-microsoft-365-apps.md
 
     - title: Microsoft 365 Insider Program for Business
-      itemType: overview
+      itemType: get-started
       url: https://learn.microsoft.com/en-us/microsoft-365-apps/insider
 
 # Product Directory
