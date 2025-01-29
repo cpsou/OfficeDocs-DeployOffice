@@ -17,7 +17,7 @@ highlightedContent:
   items:
     - title: What's new in Microsoft 365 Apps
       itemType: whats-new
-      url: whats-new.md
+      url: deploy/whats-new.md
 
     - title: Overview of deployment options
       itemType: overview
@@ -58,7 +58,7 @@ productDirectory:
         - url: https://www.microsoft.com/fasttrack
           text: Learn more
 
-# Conceptual Content
+# Conceptual Content (Deployment, Updates, Licensing)
 conceptualContent:
   items:
     - title: Deployment
@@ -100,6 +100,45 @@ conceptualContent:
           url: licensing-activation/troubleshoot-shared-computer-activation.md
           itemType: learn
 
+    - title: Security and compliance
+      links:
+        - text: Overview of security baselines
+          url: security/security-baseline.md
+          itemType: overview
+        - text: Block VBA macros from the internet
+          url: security/internet-macros-blocked.md
+          itemType: how-to-guide
+        - text: Configure trusted locations
+          url: security/trusted-locations.md
+          itemType: how-to-guide
+        - text: Compliance and data protection
+          url: security/compliance-overview.md
+          itemType: overview
+
+    - title: Outlook
+      links:
+        - text: Overview of the new Outlook
+          url: outlook/overview-new-outlook.md
+          itemType: overview
+        - text: Managing updates for Outlook
+          url: outlook/manage/manage-updates-new-outlook-windows.md
+          itemType: how-to-guide
+        - text: Troubleshooting Outlook issues
+          url: outlook/troubleshoot/troubleshoot-overview-new-outlook.md
+          itemType: learn
+
+    - title: Office for Mac
+      links:
+        - text: Overview of activation for Office for Mac
+          url: mac/overview-of-activation-for-office-for-mac.md
+          itemType: overview
+        - text: Deployment guide for Office for Mac
+          url: mac/deployment-guide-for-office-for-mac.md
+          itemType: deploy
+        - text: Managing updates for Office for Mac
+          url: mac/deploy-updates-for-office-for-mac.md
+          itemType: how-to-guide
+
 # Tools
 tools:
   title: Key deployment and management tools
@@ -118,48 +157,6 @@ tools:
 # Additional Content
 additionalContent:
   sections:
-    - title: Security and compliance
-      summary: Ensure Microsoft 365 Apps security with recommended best practices.
-      items:
-        - title: Overview of security baselines
-          summary: Security baselines and best practices for Microsoft 365 Apps.
-          url: security/security-baseline.md
-        - title: Block VBA macros from the internet
-          summary: Improve security by blocking untrusted macros.
-          url: security/internet-macros-blocked.md
-        - title: Configure trusted locations
-          summary: Manage security settings to control trusted file locations.
-          url: security/trusted-locations.md
-        - title: Compliance and data protection
-          summary: Ensure compliance with Microsoft 365 Apps security policies.
-          url: security/compliance-overview.md
-
-    - title: Outlook
-      summary: Learn about deployment, management, and troubleshooting for Outlook in Microsoft 365 Apps.
-      items:
-        - title: Overview of the new Outlook
-          summary: Learn about changes and features in the new Outlook experience.
-          url: outlook/overview-new-outlook.md
-        - title: Managing updates for Outlook
-          summary: Keep Outlook updated and manage rollouts effectively.
-          url: outlook/manage/manage-updates-new-outlook-windows.md
-        - title: Troubleshooting Outlook issues
-          summary: Find solutions for common Outlook issues.
-          url: outlook/troubleshoot/troubleshoot-overview-new-outlook.md
-
-    - title: Office for Mac
-      summary: Resources for deploying, updating, and licensing Office for Mac.
-      items:
-        - title: Overview of activation for Office for Mac
-          summary: Learn how to activate Office for Mac in your organization.
-          url: mac/overview-of-activation-for-office-for-mac.md
-        - title: Deployment guide for Office for Mac
-          summary: Step-by-step guide to deploying Office for Mac.
-          url: mac/deployment-guide-for-office-for-mac.md
-        - title: Managing updates for Office for Mac
-          summary: Learn how to update Office for Mac effectively.
-          url: mac/deploy-updates-for-office-for-mac.md
-
     - title: Additional resources
       summary: Explore more resources for Microsoft 365 Apps administration and end-user support.
       items:
