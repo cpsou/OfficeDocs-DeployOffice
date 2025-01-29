@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2021 for Mac."
-ms.date: 01/23/2025
+ms.date: 01/28/2025
 ---
 
 # Set preferences for Outlook for Mac
@@ -425,9 +425,9 @@ Set when pictures are automatically downloaded from the internet for email.
 |Domain| com.microsoft.Outlook |
 |Key|AutomaticallyDownloadExternalContent |
 |Data Type|Integer   |
-|Possible values| 0 = Never <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  (default) |
+|Possible values| 0 = Never <br/> 1 = In messages from my contacts, safe senders and GAL  <br/> 2 = In all messages  (default) |
 |Requires Configuration Profile| No |
-|Availability|16.17 |
+|Availability|16.91 |
 |Comments| Found under **Outlook** > **Settings** > **Email** > **Reading** > **Download external images**.  |
 
 ### Disable signatures
