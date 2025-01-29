@@ -40,19 +40,19 @@ productDirectory:
   summary: Learn how to prepare and plan for Microsoft 365 Apps deployment.
   items:
     - title: Assess your environment and requirements
-      imageSrc: /office/media/icons/search-blue.png
+      imageSrc: /office/media/icons/search-blue.svg
       links:
         - url: deploy/assess-microsoft-365-apps.md
           text: Learn more
 
     - title: Plan your deployment strategy
-      imageSrc: /office/media/icons/deploy-blue.png
+      imageSrc: /office/media/icons/deploy-blue.svg
       links:
         - url: deploy/plan-microsoft-365-apps.md
           text: Learn more
 
     - title: Microsoft FastTrack
-      imageSrc: /office/media/icons/get-started-blue.png
+      imageSrc: /office/media/icons/get-started-blue.svg
       links:
         - url: https://www.microsoft.com/fasttrack
           text: Learn more
