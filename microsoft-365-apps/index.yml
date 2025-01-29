@@ -17,7 +17,7 @@ highlightedContent:
   items:
     - title: What's new in Microsoft 365 Apps
       itemType: whats-new
-      url: deploy/whats-new.md
+      url: whats-new.md
 
     - title: Overview of deployment options
       itemType: overview
@@ -27,13 +27,13 @@ highlightedContent:
       itemType: overview
       url: updates/overview-update-channels.md
 
-    - title: Microsoft 365 Apps health and inventory
-      itemType: overview
-      url: admin-center/microsoft-365-apps-health.md
-
     - title: Licensing and activation overview
       itemType: reference
       url: licensing-activation/overview-licensing-activation-microsoft-365-apps.md
+
+    - title: Microsoft 365 Insider Program for Business
+      itemType: overview
+      url: https://learn.microsoft.com/en-us/microsoft-365-apps/insider
 
 # Product Directory
 productDirectory:
@@ -157,15 +157,23 @@ tools:
 # Additional Content
 additionalContent:
   sections:
-    - title: Additional resources
-      summary: Explore more resources for Microsoft 365 Apps administration and end-user support.
+    - title: Help and Support
       items:
+        - title: Community Support on Microsoft Q&A
+          summary: Get advice and answers from community experts.
+          url: https://learn.microsoft.com/en-us/answers/tags/9/m365
+        - title: Microsoft Support for Business
+          summary: Access Microsoft’s 1:1 support for business customers.
+          url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
         - title: End user help and learning
           summary: Help and training for end users using Microsoft 365 Apps.
           url: https://support.microsoft.com/microsoft-365
+
+    - title: Troubleshooting and Resources
+      items:
         - title: Troubleshooting Microsoft 365 Apps
           summary: Find solutions for common Microsoft 365 Apps issues.
           url: https://learn.microsoft.com/en-us/office/troubleshoot/office-client-welcome
-        - title: Microsoft 365 Insider Program for Business
-          summary: Get early access to new features in Microsoft 365 Apps.
-          url: https://learn.microsoft.com/en-us/microsoft-365-apps/insider
+        - title: Microsoft Learn Documentation
+          summary: Browse all Microsoft 365 Apps technical documentation.
+          url: https://learn.microsoft.com/microsoft-365-apps
