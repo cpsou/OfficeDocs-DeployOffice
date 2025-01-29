@@ -139,21 +139,6 @@ conceptualContent:
           url: mac/deploy-updates-for-office-for-mac.md
           itemType: how-to-guide
 
-# Tools
-tools:
-  title: Key deployment and management tools
-  summary: Explore essential tools for deploying and managing Microsoft 365 Apps.
-  items:
-    - title: Office Deployment Tool
-      imageSrc: office/media/icons/deployment-tool.svg
-      url: deploy/overview-office-deployment-tool.md
-    - title: Group Policy settings
-      imageSrc: office/media/icons/group-policy.svg
-      url: insider/deploy/group-policy.md
-    - title: Intune for policy management
-      imageSrc: office/media/icons/intune.svg
-      url: insider/deploy/intune.md
-
 # Additional Content
 additionalContent:
   sections:
@@ -161,10 +146,10 @@ additionalContent:
       items:
         - title: Community Support on Microsoft Q&A
           summary: Get advice and answers from community experts.
-          url: https://learn.microsoft.com/en-us/answers/tags/9/m365
+          url: https://learn.microsoft.com/answers/tags/9/m365
         - title: Microsoft Support for Business
           summary: Access Microsoft’s 1:1 support for business customers.
-          url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
+          url: https://support.microsoft.com/supportforbusiness
         - title: End user help and learning
           summary: Help and training for end users using Microsoft 365 Apps.
           url: https://support.microsoft.com/microsoft-365
@@ -173,7 +158,7 @@ additionalContent:
       items:
         - title: Troubleshooting Microsoft 365 Apps
           summary: Find solutions for common Microsoft 365 Apps issues.
-          url: https://learn.microsoft.com/en-us/office/troubleshoot/office-client-welcome
+          url: /office/troubleshoot/office-client-welcome
         - title: Microsoft Learn Documentation
-          summary: Browse all Microsoft 365 Apps technical documentation.
-          url: https://learn.microsoft.com/microsoft-365-apps
+          summary: Browse all Microsoft 365 documentation.
+          url: /microsoft-365
