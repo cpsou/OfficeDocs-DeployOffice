@@ -32,7 +32,6 @@ productDirectory:
     - title: Office LTSC 2024
       imageSrc: /office/media/icons/deploy-blue.svg
       summary: "Learn how to deploy, update, and manage Office LTSC 2024."
-      url: ./ltsc/2024/
       links:
         - url: ./ltsc/2024/overview.md
           text: Overview of Office LTSC 2024
@@ -44,7 +43,6 @@ productDirectory:
     - title: Office LTSC 2021
       imageSrc: /office/media/icons/deploy-blue.svg
       summary: "Guidance for Office LTSC 2021 deployment and updates."
-      url: ./ltsc/2021/
       links:
         - url: ./ltsc/2021/overview.md
           text: Overview of Office LTSC 2021
@@ -56,7 +54,6 @@ productDirectory:
     - title: Office 2019
       imageSrc: /office/media/icons/deploy-blue.svg
       summary: "Resources for deploying and updating Office 2019."
-      url: ./2019/
       links:
         - url: ./2019/overview.md
           text: Overview of Office 2019 (for IT Pros)
@@ -68,7 +65,6 @@ productDirectory:
     - title: Office 2016
       imageSrc: /office/media/icons/deploy-blue.svg
       summary: "Access key resources for Office 2016 before it reaches end of support."
-      url: ./2016/
       links:
         - url: ./2016/index.yml
           text: Office 2016 deployment
@@ -76,7 +72,6 @@ productDirectory:
     - title: Office for Mac
       imageSrc: /office/media/icons/mac-blue.svg
       summary: "Deployment and update guidance for Office for Mac."
-      url: /microsoft-365-apps/mac/overview.md
       links:
         - url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac.md
           text: Deployment Guide
