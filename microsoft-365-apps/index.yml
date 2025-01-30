@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: nicholasswhite
   ms.author: nwhite
-  ms.date: 01/27/2025
+  ms.date: 01/30/2025
 
 # Highlighted Content
 highlightedContent:
@@ -27,17 +27,17 @@ highlightedContent:
       itemType: reference
       url: licensing-activation/overview-licensing-activation-microsoft-365-apps.md
 
-    - title: Microsoft 365 Insider Program for Business
-      itemType: get-started
-      url: https://learn.microsoft.com/en-us/microsoft-365-apps/insider
-
-    - title: Microsoft 365 Apps Privacy Controls
-      itemType: reference
-      url: privacy/overview-privacy-controls.md
-
     - title: Overview of the Microsoft 365 Apps admin center
       itemType: overview
       url: admin-center/overview.md
+
+    - title: Privacy controls for Microsoft 365 Apps
+      itemType: reference
+      url: privacy/overview-privacy-controls.md
+
+    - title: Microsoft 365 Insider Program for Business
+      itemType: get-started
+      url: https://learn.microsoft.com/en-us/microsoft-365-apps/insider
 
 productDirectory:
   title: Get started
