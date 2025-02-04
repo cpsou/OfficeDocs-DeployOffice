@@ -12,7 +12,7 @@ search.appverid: MET150
 recommendations: true
 adobe-target: true
 description: "Provides Office admins with information what versions of Office are supported for connecting to Microsoft 365 services and the implications of using older Office clients."
-ms.date: 09/18/2024
+ms.date: 02/04/2025
 ---
 
 # Office versions and connectivity to Microsoft 365 services
@@ -22,7 +22,7 @@ The following table lists the Office versions that are supported for connecting 
 | Office version         | Supported for connecting until this date  |
 |------------------------|-------------------------------------------|
 | Microsoft 365 Apps      | Supported as long as you’re using a [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions). |
-| Office LTSC 2024        | October 13<sup>th</sup>, 2029             |
+| Office LTSC 2024        | October 9<sup>th</sup>, 2029             |
 | Office LTSC 2021        | October 13<sup>th</sup>, 2026             |
 
 > [!NOTE]
