@@ -5308,12 +5308,19 @@ The following fields are collected:
 
 ### Office.iOS.Paywall.ShareSubscriptionScreen.ShareableLinkFail
 
-This event is triggered when the Family onboarding aggregator API fails on share invite link tap through user profile. Event is used to determine the reason for the shareable link service failure.
+This event is triggered when tapping the "Share Invite" link in user profile fails. The event is used to determine the reason for the shareable link service failure.
 
 The following fields are collected: 
 
 - **failureReason**- Indicates the failure reason of shareable link service.
 
+### Office.iOS.Paywall.SuccessScreen.ShareLinkTap
+
+This event is triggered when user taps on the "Share Invite" button after a successful Family subscription purchase. The data is used to detect the clicks and number of successful subscription shares.
+
+The following fields are collected:
+
+- None
 
 ### Office.Licensing.AcceptEulaForCurrentLicense 
 
