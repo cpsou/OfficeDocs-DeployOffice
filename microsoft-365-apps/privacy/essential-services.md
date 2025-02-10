@@ -5314,6 +5314,16 @@ The following fields are collected:
 
 - **failureReason**- Indicates the failure reason of shareable link service.
 
+
+### Office.iOS.Paywall.SuccessScreen.ShareableLinkFail 
+
+This event is triggered when tapping the "Share Invite" link on the Family onboarding congratulation screen fails. The data is used to determine the reason for the shareable link service failure.
+
+The following fields are collected: 
+
+- **failureReason** - Indicates the failure reason of the shareable link service
+
+
 ### Office.iOS.Paywall.SuccessScreen.ShareLinkTap
 
 This event is triggered when user taps on the "Share Invite" button after a successful Family subscription purchase. The data is used to detect the clicks and number of successful subscription shares.
