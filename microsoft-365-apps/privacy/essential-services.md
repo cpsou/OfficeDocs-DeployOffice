@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 02/04/2025
+ms.date: 02/11/2025
 ---
 
 # Essential services for Office
@@ -5312,7 +5312,7 @@ This event is triggered when tapping the "Share Invite" link in user profile fai
 
 The following fields are collected: 
 
-- **failureReason**- Indicates the failure reason of shareable link service.
+- **failureReason** - Indicates the failure reason of shareable link service.
 
 
 ### Office.iOS.Paywall.SuccessScreen.ShareableLinkFail 
