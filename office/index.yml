@@ -1,110 +1,59 @@
 ### YamlMime:Hub
-title: Microsoft Office Documentation
-summary: Explore deployment, updates, and management resources for Office LTSC 2024, Office 2016, Office for Mac, and more. Find guidance on security, licensing, and Office apps.
-brand: office
+
+#root section (Required)
+title: Microsoft Office documentation # < 60 chars
+summary: Learn how to deploy and manage Office, Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement. # < 400 chars
+brand: office # brand: aspnet | azure | bash | bizapps | bot-framework | dotnet | dynamics | education | enterprise-mobility | gaming | graph | m365 | nuget | office | powershell | playfab | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | project | sharepoint | sql | surface | system-center | teams | visual-studio | windows | workplace-analytics | xamarin
 
 metadata:
-  title: Microsoft Office Documentation
-  description: Explore deployment, updates, and management resources for Office LTSC 2024, Office 2016, Office for Mac, and more. Find guidance on security, licensing, and Office apps.
-  ms.service: office
-  ms.topic: hub-page
-  author: nicholasswhite
-  ms.author: nwhite
-  ms.date: 01/30/2025  # Use the current date when finalizing
+  title: Microsoft Office documentation # Required; page title displayed in search results. Include the brand. < 65 chars.
+  description: Learn how to deploy and manage Office, Microsoft's productivity software, available as a one-time purchase from a retail store or through a volume licensing agreement. # Required; article description that is displayed in search results. < 165 chars.
+  ms.service: o365-proplus-itpro #Required; use service/product value per approved list. 
+  ms.topic: hub-page # Required
+  author: nicholasswhite #Required; your GitHub user alias, with correct capitalization.
+  ms.author: nwhite #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/22/2024 #Required; mm/dd/yyyy format.
 
-# **Highlighted Content** (Quick access to key resources)
-highlightedContent:
-  items:
-    - title: Office Add-ins
-      itemType: reference
-      url: /office/dev/add-ins/overview/office-add-ins
-    - title: Microsoft 365 Apps
-      itemType: overview
-      url: /microsoft-365-apps/
-    - title: Help & Support
-      itemType: reference
-      url: index.yml
 
-# **Product Directory** (Structured by Office versions and key applications)
-productDirectory:
-  title: Office Products
-  items:
-    - title: Office LTSC 2024
-      imageSrc: /office/media/icons/deploy-blue.svg
-      summary: "Learn how to deploy, update, and manage Office LTSC 2024."
-      links:
-        - url: ./ltsc/2024/overview.md
-          text: Overview of Office LTSC 2024
-        - url: ./ltsc/2024/deploy.md
-          text: Deploy Office LTSC 2024
-        - url: ./ltsc/2024/update.md
-          text: Update Office LTSC 2024
-
-    - title: Office LTSC 2021
-      imageSrc: /office/media/icons/deploy-blue.svg
-      summary: "Guidance for Office LTSC 2021 deployment and updates."
-      links:
-        - url: ./ltsc/2021/overview.md
-          text: Overview of Office LTSC 2021
-        - url: ./ltsc/2021/deploy.md
-          text: Deploy Office LTSC 2021
-        - url: ./ltsc/2021/update.md
-          text: Update Office LTSC 2021
-
-    - title: Office 2019
-      imageSrc: /office/media/icons/deploy-blue.svg
-      summary: "Resources for deploying and updating Office 2019."
-      links:
-        - url: ./2019/overview.md
-          text: Overview of Office 2019 (for IT Pros)
-        - url: ./2019/deploy.md
-          text: Deploy Office 2019 (for IT Pros)
-        - url: ./2019/update.md
-          text: Update Office 2019 (for IT Pros)
-
-    - title: Office 2016
-      imageSrc: /office/media/icons/deploy-blue.svg
-      summary: "Access key resources for Office 2016 before it reaches end of support."
-      links:
-        - url: ./2016/index.yml
-          text: Office 2016 deployment
-
-    - title: Office for Mac
-      imageSrc: /office/media/icons/mac-blue.svg
-      summary: "Deployment and update guidance for Office for Mac."
-      links:
-        - url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac.md
-          text: Deployment Guide
-        - url: /microsoft-365-apps/mac/deployment-options-for-office-for-mac.md
-          text: Deployment options for admins for Office for Mac
-        - url: /microsoft-365-apps/mac/deploy-updates-for-office-for-mac.md
-          text: Deploy updates for Office for Mac
-
-    - title: Project, Visio, OneNote
-      imageSrc: /office/media/icons/apps-blue.svg
-      summary: "Deploy and manage Project, Visio, and OneNote."
-      links:
-        - url: /microsoft-365-apps/deploy/deployment-guide-for-project
-          text: Deployment guide for Project
-        - url: /microsoft-365-apps/deploy/deployment-guide-for-visio
-          text: Deployment guide for Visio
-        - url: /microsoft-365-apps/deploy/deployment-guide-onenote
-          text: Deployment guide for OneNote
-
-# **Additional Content** (Help & Learning Resources)
+# additionalContent section (Optional; Remove if not applicable.)
+# Card with summary style
 additionalContent:
+  # Supports up to 4 subsections
   sections:
-    - title: Resources
-      items:
-        - title: "Troubleshooting"
-          summary: "Find guidance to troubleshoot and fix errors that you may experience when using Microsoft Office products."
+    - items:
+        # Card
+        - title: Office LTSC 2024
+          summary: Learn how to deploy and manage Office LTSC 2024 - the latest version of Microsoft's productivity software that's available to organizations through a volume licensing agreement.
+          url: /office/ltsc/2024/
+        # Card
+        - title: Office LTSC 2021
+          summary: Learn how to deploy and manage Office LTSC 2021 - Microsoft's productivity software that's available to organizations through a volume licensing agreement.
+          url: /office/ltsc/2021/
+        # Card
+        - title: Office 2019
+          summary: Learn how to deploy and manage Office 2019 - Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement.
+          url: /office/2019/
+        # Card
+        - title: Office 2016
+          summary: Learn about administration tools, application compatibility, volume activation, and language deployment for Office 2016.
+          url: /office/2016/
+        # Card
+        - title: Office for Mac
+          summary: Find guidance about deploying Office (or Microsoft 365 Apps) to Macs in your organization.
+          url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac
+        # Card
+        - title: Office Add-ins
+          summary: Use the Office Add-ins platform to build solutions that extend Office applications and interact with content in Office documents and in Outlook mail messages and calendar items. 
+          url: /office/dev/add-ins/overview/office-add-ins
+        # Card
+        - title: Troubleshooting
+          summary: Find guidance to troubleshoot and fix errors that you may experience when using Microsoft Office products.
           url: /office/troubleshoot/office-client-welcome
-        - title: "Microsoft Office Training"
-          summary: "Step-by-step training for Microsoft Office."
-          url: /training/browse/?products=office
-        - title: "Microsoft 365 Tech Community"
-          summary: "Connect with IT professionals, product experts, and Microsoft engineers to discuss Microsoft 365 solutions, best practices, and latest updates."
-          url: https://techcommunity.microsoft.com/category/microsoft365
-        - title: "End user help and learning"
-          summary: "Help and learning resources for end users."
+        # Card
+        - title: End user help and learning
+          summary: Find end user help and learning resources for Office and other Microsoft products.
           url: https://support.microsoft.com/
+        # Card
+        - title: Microsoft 365 Apps
+          summary: Find information about deploying Microsoft 365 Apps (Office apps included with Microsoft 365 or Office 365) to your organization.
+          url: /microsoft-365-apps/ 
