@@ -31,14 +31,6 @@ This article outlines the requirements, limitations, and deployment guidance for
 > [!NOTE]
 > Windows Server 2019 and Windows Server 2016 are not supported.
 
-To avoid startup issues, add these processes to the exclusion list in your antivirus software:
-- `olk.exe`
-- `olkPushNotificationBackgroundTask.exe`
-- `xpdAgent.exe`
-- `relaunchNativeHost.exe`
-
-Alternatively, add these processes to the allowlist in your data loss prevention (DLP) software. For specific instructions, contact your DLP software provider.
-
 ## Virtualization Provider Requirements
 
 The following sections outline the requirements for virtualization providers that support the new Outlook for Windows.
